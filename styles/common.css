@@ -2,7 +2,6 @@
 .container {
     max-width: 1180px;
     text-decoration: none;
-    font-family:'Open Sans', sans-serif;
 }
 
 /* HEADER */
@@ -11,6 +10,7 @@
     display: flex;
     align-items: center;
     margin: 50px auto;
+    font-family:'Open Sans', sans-serif;
 }
 
 .header__nav-list {display: flex;}
@@ -49,6 +49,12 @@ a {text-decoration: none;}
     align-items: center;
     flex-wrap: wrap;
 }
+/* иконка */
+.header__list-btn {
+    border: none;
+    padding: 0;
+    background-color: #fff;
+}
 
 
 
@@ -60,6 +66,7 @@ a {text-decoration: none;}
     padding: 100px 110px;
     font-size: 16px;
     flex-wrap: wrap;
+    font-family:'Open Sans', sans-serif;
 }
 .footer__info, .footer__subtitle-list, .footer__title-listfooter {
     display: flex;
