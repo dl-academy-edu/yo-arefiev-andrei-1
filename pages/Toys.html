@@ -2,25 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content=form
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toys</title>
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="header__logo">
-            <img src="../images/Header/Union.png" alt="Logotype DLK" class="header__logo-img" >
+    <header class="header container">
+        <a class="header__logo" href="#">
+            <img class="header__logo-img" src="./images/Header/Union.png" alt="Logotype DLK" width="100" height="52">
         </a>
         <nav class="header__nav">
             <ul class="header__nav-list">
                 <li class="header__nav-item">
-                    <a href="#" class="header__nav-link">BLOG</a>
+                    <a class="header__nav-link" href="#">BLOG</a>
                 </li>
                 <li class="header__nav-item">
-                    <a href="#" class="header__nav-link">CATALOG</a>
+                    <a class="header__nav-link" href="#">CATALOG</a>
                 </li>
                 <li class="header__nav-item">
-                    <a href="#" class="header__nav-link">ABOUT US</a>
+                    <a class="header__nav-link" href="#">ABOUT US</a>
                 </li>
             </ul>
         </nav>
@@ -28,14 +28,13 @@
             <li class="header__list-item">
                 <div class="header__list-wrapper">
                     <form class="header__list-form">
-                        <input type="text" placeholder="Search here..." class="header__list-input">
-                        <button type="submit">
-                            <img src="../images/Header/XMLID.png" alt="magnifying glass" class="header__list-icon">
+                        <button class="header__list-btn" type="submit">
+                            <img class="header__list-icon" src="./images/Header/XMLID.png" alt="magnifying glass">
                         </button>
                     </form>
                 </div>
             </li>
-            <li class="header__list-item"><a href="#">CONTACT US</a></li>
+            <li class="header__list-item"><a class="header__list-link" href="#">CONTACT US</a></li>
         </ul>
     </header>
     <h1 class="title">TOY FOR KIDS</h1>
@@ -57,11 +56,12 @@
         </li>
     </ul>
     <form class="form">
-        <ul class="form__list">
+        <ul class="form__range">
             <li class="form__list-item">
                 <h2 class="form__list-text">Cost</h2>
                 <input type="range" class="form__list-input">
             </li>
+        </ul>
         <ul class="form__list">
             <li class="form__list-item">
                 <h2 class="form__list-text">Color</h2>
@@ -79,19 +79,20 @@
                 <input type="checkbox" name="color-four" class="form__list-input" value="color-four">
             </li>
         </ul>
-        <ul>
+        <ul class="form__list-aside">
             <li class="form__list-item">
                 <h2 class="form__list-text">Delivery</h2>
             </li>
             <li class="form__list-item">
                 <input type="radio" class="form__list-input" id="free" name="shipping" value="free">
-                <label for="free">Free shipping</label><cards<li class="form__list-item">
+                <label for="free">Free shipping</label>
             </li>
+            <li class="form__list-item">
                 <input type="radio" class="form__list-input" id="fast" name="shipping" value="fast">
                 <label for="fast">Fast shipping</label>
             </li>
         </ul>
-        <ul>
+        <ul class="form__list-form">
             <li class="form__list-item">
                 <h2 class="form__list-text">Amount</h2> 
             </li>
@@ -105,7 +106,9 @@
                 <input type="button" class="form__list-button" value="20-50">
             </li>
         </ul>
-            <li class="form__list-item"breadcrumps            <input type="button" name="button" class="form__list" value="Apply">
+        <ul class="form__list-btn">
+            <li class="form__list-item">
+                <input type="button" name="button" class="form__list-click" value="Apply">
             </li>
         </ul>
     </form>
@@ -157,86 +160,112 @@
             </li>
         </ul>
     </section>
-    <footer>
-        <section class="info">
-            <h2 class="info__title">Navigation</h2>
-            <ul class="info__list">
-                <li class="info__list-item">
-                    <a href="#" class="info__list-link">About Us</a>
+    <footer class="footer container">
+        <section class="footer__title">
+            <ul class="footer__title-listfooter">
+                <li class="footer__title-item">
+                    <p class="footer__title-text">Navigation</p>
                 </li>
-                <li class="info__list-item">
-                    <a href="#" class="info__list-link">Blog</a>
+                <li class="footer__title-item">
+                    <p class="footer__title-text">Customer Information</p>
                 </li>
-                <li class="info__list-item">
-                    <a href="#" class="info__list-link">Design Services</a>
-                </li>
-                <li class="info__list-item">
-                    <a href="#" class="info__list-link">Featured On</a>
-                </li>
-                <li class="info__list-item">
-                    <a href="#" class="info__list-link">2018 Holiday Catalog</a>
-                </li>
-                <li class="info__list-item">
-                    <a href="#" class="info__list-link">Shop By Designer</a>
+                <li class="footer__title-item">
+                    <p class="footer__title-text">Connect</p>
                 </li>
             </ul>
         </section>
-        <section class="aside">
-            <h2 class="aside__">Customer Information</h2>
-            <ul class="aside__list">
-                <li class="aside__list-item">
-                    <a href="#" class="aside__list-link">Contact Us</a>
+        <section class="footer__info">
+            <ul class="footer__info-list">
+                <li class="footer__info-item text">
+                    <a class="footer__info-link" href="#">About Us</a>
                 </li>
-
-                <li class="aside__list-item">
-                    <a href="#" class="aside__list-link">Sale Exclusions</a>
+                <li class="footer__info-item text">
+                    <a class="footer__info-link" href="#">Blog</a>
                 </li>
-                <li class="aside__list-item">
-                    <a href="#" class="aside__list-link">Shipping & Returns</a>
+                <li class="footer__info-item text">
+                    <a class="footer__info-link" href="#">Design Services</a>
                 </li>
-                <li class="aside__list-item">
-                    <a href="#" class="aside__list-link">Terms & Conditions</a>
+                <li class="footer__info-item text">
+                    <a class="footer__info-link" href="#">Featured On</a>
                 </li>
-                <li class="aside__list-item">
-                    <a href="#" class="aside__list-link">Privacy Policy</a>
+                <li class="footer__info-item text">
+                    <a class="footer__info-link" href="#">2018 Holiday Catalog</a>
                 </li>
-                <li class="aside__list-item">
-                    <a href="#" class="aside__list-link">Search</a>
+                <li class="footer__info-item text">
+                    <a class="footer__info-link" href="#">Shop By Designer</a>
+                </li>
+            </ul>
+            <ul class="footer__info-aside">   
+                <li class="footer__info-item text">
+                    <a class="footer__info-link" href="#">Contact Us</a>
+                </li>
+                <li class="footer__info-item text">
+                    <a class="footer__info-link" href="#">Sale Exclusions</a>
+                </li>
+                <li class="footer__info-item text">
+                    <a class="footer__info-link" href="#">Shipping & Returns</a>
+                </li>
+                <li class="footer__info-item text">
+                    <a class="footer__info-link" href="#">Terms & Conditions</a>
+                </li>
+                <li class="footer__info-item text">
+                    <a class="footer__info-link" href="#">Privacy Policy</a>
+                </li>
+                <li class="footer__info-item text">
+                    <a class="footer__info-link" href="#">Search</a>
+                </li>
+            </ul>
+            <ul class="footer__info-logo">
+                <li class="footer__info-email">
+                    <form class="footer__info-form">
+                        <input class="footer__info-input" type="email" name="Email" value="Email" required>
+                        <button class="footer__info-btn" type="submit">JOIN</button>
+                    </form>
+                </li>
+                <li class="footer__info-icon">
+                    <a class="footer__info-link" href="#">
+                        <img class="footer__info-img" src="./images/footer/Facebook.png" alt="Logotype Facebook">
+                    </a>
+                </li>
+                <li class="footer__info-icon">
+                    <a class="footer__info-link" href="#">
+                        <img class="footer__info-img" src="./images/footer/Twitter.png" alt="Logotype Twitter">
+                    </a>
+                </li>
+                <li class="footer__info-icon">
+                    <a class="footer__info-link" href="#">
+                        <img class="footer__info-img" src="./images/footer/Pinterest.png" alt="Logotype Pinterest">
+                    </a>
+                </li>
+                <li class="footer__info-icon">
+                    <a class="footer__info-link" href="#">
+                        <img class="footer__info-img" src="./images/footer/Instagram.png" alt="Logotype Instagram">
+                    </a>
                 </li>
             </ul>
         </section>
-        <section class="logo">
-            <h2 class="logo__title">Connect</h2>
-            <form class="logo__form">
-                <input type="email" name="email" class="logo__input" id="email" required>
-                <button type="submit" class="logo__btn
-                ">JOIN</button>
-            </form>
-            <ul class="logo__list">
-                <li class="logo__list-item">
-                    <a href="#" class="logo__list-link">
-                        <img src="../images/footer/Facebook.png" alt="Logotype Facebook" class="logo__list-img">
-                    </a>
+        <section class="footer__subtitle">
+            <ul class="footer__subtitle-list">
+                <li class="footer__subtitle-item">
+                    <div class="footer__subtitle-rating">
+                        <p class="footer__subtitle-ratingStar">Company Rating</p>
+                        <div class="footer__subtitle-group">
+                            <input class="footer__subtitle-star" type="radio" name="rating" value="one" aria-label="terrible" checked>
+                            <input class="footer__subtitle-star" type="radio" name="rating" value="two" aria-label="bearable">
+                            <input class="footer__subtitle-star" type="radio" name="rating" value="free" aria-label="normally">
+                            <input class="footer__subtitle-star" type="radio" name="rating" value="four" aria-label="fine">
+                            <input class="footer__subtitle-star" type="radio" name="rating" value="five" aria-label="wonderful">
+                        </div>
+                    </div>
                 </li>
-                <li class="logo__list-item">
-                    <a href="#" class="logo__list-link">
-                        <img src="../images/footer/Twitter.png" alt="Logotype Twitter" class="logo__list-img">
-                    </a>
+                <li class="footer__subtitle-item">
+                    <p class="footer__subtitle-signature">Copyright © 2018 Dlk • Design Life Kids</p>
                 </li>
-                <li class="logo__list-item">
-                    <a href="#" class="logo__list-link">
-                        <img src="../images/footer/Pinterest.png" alt="Logotype Pinterest" class="logo__list-img">
-                    </a>
-                </li>
-                <li class="logo__list-item">
-                    <a href="#" class="logo__list-link">
-                        <img src="../images/footer/Instagram.png" alt="Logotype Instagram" class="logo__list-img">
-                    </a>
+                <li class="footer__subtitle-item">
+                    <a class="footer__subtitle-signature only" href="#"><p>Web Design — Direct Line Development</p></a>
                 </li>
             </ul>
         </section>
-        <h2 class="signature">Copyright © 2018 Dlk • Design Life Kids</h2>
-        <h2 class="signature">Web Design — Direct Line Development</h2>
     </footer>
 </body>
 </html>
