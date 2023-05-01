@@ -5,27 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalog</title>
-    <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/Catalog.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="header__logo">
-            <img src="../images/Header/Union.png" alt="Logotype DLK" class="header__logo-img" >
+    <header class="header container">
+        <a class="header__logo" href="#">
+            <img class="header__logo-img" src="../images/Header/Union.png" alt="Logotype DLK" width="100" height="52">
         </a>
         <nav class="header__nav">
             <ul class="header__nav-list">
                 <li class="header__nav-item">
-                    <a href="#" class="header__nav-link">BLOG</a>
+                    <a class="header__nav-link" href="#">BLOG</a>
                 </li>
                 <li class="header__nav-item">
-                    <a href="#" class="header__nav-link">CATALOG</a>
+                    <a class="header__nav-link" href="#">CATALOG</a>
                 </li>
                 <li class="header__nav-item">
-                    <a href="#" class="header__nav-link">ABOUT US</a>
+                    <a class="header__nav-link" href="#">ABOUT US</a>
                 </li>
             </ul>
         </nav>
@@ -33,154 +34,174 @@
             <li class="header__list-item">
                 <div class="header__list-wrapper">
                     <form class="header__list-form">
-                        <input type="text" placeholder="Search here..." class="header__list-input">
-                        <button type="submit">
-                            <img src="../images/Header/XMLID.png" alt="magnifying glass" class="header__list-icon">
+                        <button class="header__list-btn" type="submit">
+                            <img class="header__list-icon" src="../images/Header/XMLID.png" alt="magnifying glass">
                         </button>
                     </form>
                 </div>
             </li>
-            <li class="header__list-item"><a href="#">CONTACT US</a></li>
+            <li class="header__list-item"><a class="header__list-link" href="#">CONTACT US</a></li>
         </ul>
     </header>
-        <h1 class="title">CATEGORY PRODUCTS</h1>
-        <ul class="breadcrumps__list">
-            <li class="breadcrumps__list-item">
-                <p class="breadcrumps__list-text">Home</p>
+    <section class="block container">
+        <h1 class="block__title"
+        tabindex="0">CATEGORY PRODUCTS</h1>
+        <ul class="block__breadcrumps">
+            <li class="block__breadcrumps-item">
+                <p class="block__breadcrumps-text" tabindex="0">Home</p>
             </li>
-            <li class="breadcrumps__list-item">
-                <img src="../images/Category/Vector.png" alt="breadcrumps__list-vector" class="breadcrumps__list-img">
+            <li class="block__breadcrumps-item">
+                <img class="block__breadcrumps-img" tabindex="0" src="../images/Category/Vector(Stroke).png" alt="breadcrumps__list-vector">
             </li>
-            <li class="breadcrumps__list-item">
-                <p class="breadcrumps__list-text">Catalog</p>
+            <li class="block__breadcrumps-item">
+                <p class="block__breadcrumps-text catalog" tabindex="0">Catalog</p>
             </li>
         </ul>
-        <sectibreadcrumps class="services">
-            <ul class="services__list">
-                <li class="services__list-item">
--               <img src="../images/Category/Product-one.png" alt="services__list-pic" class="services__list-img">
-                    <a href="#" class="services__list-link">
-                        <h2 class="services__list-subtitle">APPAREL KIDS</h2>
-                    </a>
+    </section>   
+    <section class="block__services container">
+            <ul class="block__services-list">
+                <li class="block__services-item">
+                    <img class="block__services-sweater" src="../images/Category/sweater.jpg" alt="block__services-pic">
+                    <a href="#" class="block__services-link">APPAREL KIDS</a>
                 </li>
-                <li class="services__list-item">
-                    <img src="../images/Category/Product-two.png" alt="services__list-pic" class="services__list-img">
-                    <a href="#" class="Services__list-link">
-                        <h2 class="services__list-subtitle">HOLIDAY SHOP</h2>
-                    </a>
+                <li class="block__services-item block__services-sock">
+                    <img class="block__services-sock" src="../images/Category/Product-two.png" alt="services__list-pic">
+                    <a href="#" class="block__services-link">HOLIDAY SHOP</a>
                 </li>
-                <li class="services__list-item">
-                    <img src="../images/Category/Product_bkd-free.png" alt="services__list-pic" class="services__list-img">
-                    <a href="#" class="services__list-link">
-                        <h3 class="services__list-subtitle">TOYS</h3>
-                    </a>
+                <li class="block__services-item block__services-deer">
+                    <img class="block__services-deer" src="../images/Category/Product_bkd-free.png" alt="services__list-pic">
+                    <a href="#" class="block__services-link">TOYS</a>
                 </li>
-                <li class="services__list-item">
-                    <img src="../images/Category/Product-four.png" alt="services__list-pic" class="services__list-img">
-                    <a href="#" class="services__list-link">
-                        <h2 class="services__list-subtitle">ACCESSORIES</h2>
-                    </a>
+            </ul>
+            <ul class="block__services-aside">
+                <li class="block__services-item block__services-yeti-item">
+                    <img class="block__services-yeti" src="../images/Category/Product-four.png" alt="services__list-pic">
+                    <a href="#" class="block__services-link">ACCESSORIES</a>
                 </li>
-                <li class="services__list-item">
-                    <img src="../images/Category/Product-five.png" alt="services__list-pic" class="services__list-img">
-                    <a href="#" class="services__list-link">
-                        <h2 class="services__list-subtitle">SALE</h2>
-                    </a>
+                <li class="block__services-item block__services-flamingos-item">
+                    <img class="block__services-flamingos" src="../images/Category/flamingo.jpg" alt="services__list-pic">
+                    <a href="#" class="block__services-link">SALE</a>
                 </li>
-                <li class="services__list-item">
-                    <img src="../images/Category/Product-six.png" alt="services__list-pic" class="services__list-img">
-                    <a href="#" class="services__list-link">
-                        <h2 class="services__list-subtitle">APPAREL ADULTS</h2>
-                    </a>
+                <li class="block__services-item">
+                    <img class="block__services-dress" src="../images/Category/dress.jpg" alt="services__list-pic">
+                    <a href="#" class="block__services-link block__services-link-dress">APPAREL ADULTS</a>
                 </li>
             </ul>   
-        </sectibreadcrumps
-        <section class="desc">
-                <h2 class="desc__subtitle">PRODUCT DESCRIPTION</h2>
-                <p class="desc__text">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
-                <p class="desc__text">A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
-                <p class="desc__text">The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
     </section>
-    <footer>
-        <section class="info">
-            <h2 class="info__title">Navigation</h2>
-            <ul class="info__list">
-                <li class="info__list-item">
-                    <a href="#" class="info__list-link">About Us</a>
-                </li>
-                <li class="info__list-item">
-                    <a href="#" class="info__list-link">Blog</a>
-                </li>
-                <li class="info__list-item">
-                    <a href="#" class="info__list-link">Design Services</a>
-                </li>
-                <li class="info__list-item">
-                    <a href="#" class="info__list-link">Featured On</a>
-                </li>
-                <li class="info__list-item">
-                    <a href="#" class="info__list-link">2018 Holiday Catalog</a>
-                </li>
-                <li class="info__list-item">
-                    <a href="#" class="info__list-link">Shop By Designer</a>
-                </li>
-            </ul>
-        </section>
-        <section class="aside">
-            <h2 class="aside__">Customer Information</h2>
-            <ul class="aside__list">
-                <li class="aside__list-item">
-                    <a href="#" class="aside__list-link">Contact Us</a>
-                </li>
-
-                <li class="aside__list-item">
-                    <a href="#" class="aside__list-link">Sale Exclusions</a>
-                </li>
-                <li class="aside__list-item">
-                    <a href="#" class="aside__list-link">Shipping & Returns</a>
-                </li>
-                <li class="aside__list-item">
-                    <a href="#" class="aside__list-link">Terms & Conditions</a>
-                </li>
-                <li class="aside__list-item">
-                    <a href="#" class="aside__list-link">Privacy Policy</a>
-                </li>
-                <li class="aside__list-item">
-                    <a href="#" class="aside__list-link">Search</a>
-                </li>
-            </ul>
-        </section>
-        <section class="logo">
-            <h2 class="logo__title">Connect</h2>
-            <form class="logo__form">
-                <input type="email" name="email" class="logo__input" id="email" required>
-                <button type="submit" class="logo__btn
-                ">JOIN</button>
-            </form>
-            <ul class="logo__list">
-                <li class="logo__list-item">
-                    <a href="#" class="logo__list-link">
-                        <img src="../images/footer/Facebook.png" alt="Logotype Facebook" class="logo__list-img">
-                    </a>
-                </li>
-                <li class="logo__list-item">
-                    <a href="#" class="logo__list-link">
-                        <img src="../images/footer/Twitter.png" alt="Logotype Twitter" class="logo__list-img">
-                    </a>
-                </li>
-                <li class="logo__list-item">
-                    <a href="#" class="logo__list-link">
-                        <img src="../images/footer/Pinterest.png" alt="Logotype Pinterest" class="logo__list-img">
-                    </a>
-                </li>
-                <li class="logo__list-item">
-                    <a href="#" class="logo__list-link">
-                        <img src="../images/footer/Instagram.png" alt="Logotype Instagram" class="logo__list-img">
-                    </a>
-                </li>
-            </ul>
-        </section>
-        <h2 class="signature">Copyright © 2018 Dlk • Design Life Kids</h2>
-        <h2 class="signature">Web Design — Direct Line Development</h2>
-    </footer> 
+    <section class="block__desc container">
+                <h2 class="block__desc-subtitle" tabindex="0">PRODUCT DESCRIPTION</h2>
+                <p class="block__desc-text block__desc-text-one" tabindex="0">Interactive doll Zapf Creation Baby Born Sister can drink from a bottle and almost really cry. You can even bathe her, just like a little sister.</p>
+                <p class="block__desc-text block__desc-text-two" tabindex="0">A toy with a height of 43 cm bends its knees, the head rotates, it can stand upright. Such a doll will be an excellent choice for a gift for a girl from 4 years old.</p>
+                <p class="block__desc-text block__desc-text-free" tabindex="0">The set includes a miniature set of fashionable clothes, a hairbrush, a bottle for water, a pair of hairpins and elastic bands for hair, as well as two bracelets: one for the doll, the other for her young mistress.</p>
+    </section>    
+    <footer class="footer">
+        <div class="container block">
+            <section class="footer__title">
+                <ul class="footer__title-listfooter">
+                    <li class="footer__title-item">
+                        <p class="footer__title-text" tabindex="0">Navigation</p>
+                    </li>
+                    <li class="footer__title-item">
+                        <p class="footer__title-text" tabindex="0">Customer Information</p>
+                    </li>
+                    <li class="footer__title-item">
+                        <p class="footer__title-text" tabindex="0">Connect</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="footer__info">
+                <ul class="footer__info-list">
+                    <li class="footer__info-item text">
+                        <a class="footer__info-link" href="#">About Us</a>
+                    </li>
+                    <li class="footer__info-item text">
+                        <a class="footer__info-link" href="#">Blog</a>
+                    </li>
+                    <li class="footer__info-item text">
+                        <a class="footer__info-link" href="#">Design Services</a>
+                    </li>
+                    <li class="footer__info-item text">
+                        <a class="footer__info-link" href="#">Featured On</a>
+                    </li>
+                    <li class="footer__info-item text">
+                        <a class="footer__info-link" href="#">2018 Holiday Catalog</a>
+                    </li>
+                    <li class="footer__info-item text">
+                        <a class="footer__info-link" href="#">Shop By Designer</a>
+                    </li>
+                </ul>
+                <ul class="footer__info-aside">   
+                    <li class="footer__info-item text">
+                        <a class="footer__info-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="footer__info-item text">
+                        <a class="footer__info-link" href="#">Sale Exclusions</a>
+                    </li>
+                    <li class="footer__info-item text">
+                        <a class="footer__info-link" href="#">Shipping & Returns</a>
+                    </li>
+                    <li class="footer__info-item text">
+                        <a class="footer__info-link" href="#">Terms & Conditions</a>
+                    </li>
+                    <li class="footer__info-item text">
+                        <a class="footer__info-link" href="#">Privacy Policy</a>
+                    </li>
+                    <li class="footer__info-item text">
+                        <a class="footer__info-link" href="#">Search</a>
+                    </li>
+                </ul>
+                <ul class="footer__info-logo">
+                    <li class="footer__info-email">
+                        <form class="footer__info-form">
+                            <input class="footer__info-input" aria-label="0" type="email" name="Email" value="Email" required>
+                            <button class="footer__info-btn" tabindex="0" type="submit">JOIN</button>
+                        </form>
+                    </li>
+                    <li class="footer__info-icon">
+                        <a class="footer__info-link" href="#">
+                            <img class="footer__info-img" src="../images/footer/Facebook.png" alt="Logotype Facebook">
+                        </a>
+                    </li>
+                    <li class="footer__info-icon">
+                        <a class="footer__info-link" href="#">
+                            <img class="footer__info-img" src="../images/footer/Twitter.png" alt="Logotype Twitter">
+                        </a>
+                    </li>
+                    <li class="footer__info-icon">
+                        <a class="footer__info-link" href="#">
+                            <img class="footer__info-img" src="../images/footer/Pinterest.png" alt="Logotype Pinterest">
+                        </a>
+                    </li>
+                    <li class="footer__info-icon">
+                        <a class="footer__info-link" href="#">
+                            <img class="footer__info-img" src="../images/footer/Instagram.png" alt="Logotype Instagram">
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="footer__subtitle">
+                <ul class="footer__subtitle-list">
+                    <li class="footer__subtitle-item">
+                        <div class="footer__subtitle-rating">
+                            <p class="footer__subtitle-ratingStar" tabindex="0">Company Rating</p>
+                            <div class="footer__subtitle-group">
+                                <input class="footer__subtitle-star" type="radio" name="rating" value="one" aria-label="terrible" checked>
+                                <input class="footer__subtitle-star" type="radio" name="rating" value="two" aria-label="bearable">
+                                <input class="footer__subtitle-star" type="radio" name="rating" value="free" aria-label="normally">
+                                <input class="footer__subtitle-star" type="radio" name="rating" value="four" aria-label="fine">
+                                <input class="footer__subtitle-star" type="radio" name="rating" value="five" aria-label="wonderful">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="footer__subtitle-item">
+                        <p class="footer__subtitle-signature">Copyright © 2018 Dlk • Design Life Kids</p>
+                    </li>
+                    <li class="footer__subtitle-item">
+                        <a class="footer__subtitle-signature footer__subtitle-only" href="#"><p>Web Design — Direct Line Development</p></a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </footer>
 </body>
 </html>
