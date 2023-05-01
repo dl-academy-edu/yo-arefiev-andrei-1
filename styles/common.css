@@ -1,3 +1,18 @@
+button:hover {background-color:#C29974;}
+
+.services__div-img,
+button:active {background-color:#CFAF91;}
+
+button:disabled {background-color:#C7C1C1;}
+
+:focus {
+    color: #000000;
+    background-color: #fd6907;
+    border: 5px;
+    outline:invert;
+}
+.footer__subtitle-only:focus {color: #fff;}
+
 /* убрал точки */
 li {list-style-type: none;}
 /* убрал подчёркивание */
@@ -147,12 +162,12 @@ a {text-decoration: none;}
 .footer__info-link :active {opacity: 0.2;}
 
 /* именно для последнего подблока */
-.only {color: #A2A2A2;}
-.only :hover {
+.footer__subtitle-only {color: #A2A2A2;}
+.footer__subtitle-only :hover {
     color: #FFFFFF;
     text-decoration:underline;
 }
-.only :active {
+.footer__subtitle-only :active {
     color: #FFFFFF;
     text-decoration:underline;
 }
