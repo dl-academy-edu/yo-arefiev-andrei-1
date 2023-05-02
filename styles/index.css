@@ -1,0 +1,379 @@
+/* доступность */
+.services__div-img,
+button:hover {background-color:#C29974;}
+
+.services__div-img,
+button:active {background-color:#CFAF91;}
+
+button:disabled {background-color:#C7C1C1;}
+
+.footer__subtitle-only:focus {color: #fff;}
+
+.main__slider-offer:focus {
+    background-color:#C7C1C1;
+}
+:focus {
+    color: #3c2168;
+    background-color: #fd6907;
+    border: 5px;
+    outline:invert;
+}
+
+p {font-family: 'Open Sans',sans-serif;}
+h2 {font-family:'Montserrat', sans-serif;}
+
+ /* MAIN */
+.container {
+    display: flex;
+    max-width: 1180px;
+    justify-content: center;
+}
+/* БАННЕР */
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 122px auto 90px;
+    background-color: #EEE4DB;
+}
+
+.main__slider,
+.main__slider-banner,
+.main__slider-switchBtn,
+.main__slider-offer,
+.main__slider-switch {
+    display: flex;
+}
+
+.main__slider-switch {
+    flex-direction: column;
+    padding: 18px 28px 0 28px;
+}
+
+
+/* число 01 */
+.main__slider-number {
+    font-family: montserrat;
+    font-weight: 200;
+    font-size: 60px;
+    color: #1E06060D;
+    margin: 0;
+}
+
+/* кнопки для слайда */
+.main__slider-switchBtn{
+    border:none;
+    margin: 12.5px 0 -1.3px 0;
+    background-color: #EEE4DB;
+    padding: 0 4px;
+}
+.main__slider-form:hover {
+    color: #725F5B;
+}
+
+
+.main__slider-group {
+    flex-direction: column;
+    margin: 62px 16px;
+    padding: 0;
+}
+      /* Заголовок */
+.main__slider-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    width: 370px;
+}
+      /* <p-> Designed in Slovenia */
+.main__slider-phrase {
+    font-family: 'Crimson Text', sans-serif;
+    font-style: italic;
+    font-size: 20.2px;
+    margin: -10px auto;
+}
+
+.main__slider-btn,
+.main__slider-offer {
+    font-family:'Open Sans', sans-serif;
+    font-weight: 700;
+}
+  /* кнопка */
+.main__slider-btn {
+    font-size: 16px;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 10px 22.5px;
+    border: none;
+    margin: 31px 0 2px 0.5px;
+}
+   /* МОНСТР */
+.main__slider-img {
+    position: absolute;
+    height: 462px;
+    width: 635px;
+    left: 808px;
+    top: 142px;
+}
+   /* Подзаголовок снизу */
+.main__slider-offer {
+    justify-content: center;
+    background-color: #C29974;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 12px 0;
+    margin: 27px 0 0 0;
+}
+
+/* Категории (второй блок)*/
+
+.services {
+    display:flex;
+    flex-direction: column;
+    margin-top: -30px;
+}
+.services__title {
+    display: flex;
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.services__list {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0;
+}
+.services__list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-width: 280px;
+}
+
+.services__list-link {
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 32px;
+    text-shadow: 0 0 40px #93030340;
+    font-weight: 700;
+}
+/* задний фон */
+.services__list-apparel {
+    background-color: #DBE4DB;
+}
+.services__list-holyday {
+    background-color:#EADDD3 ;
+}
+.services__list-toys {
+    background-color: #F8F2DA;
+}
+.services__list-accessories {
+    background-color: #D5D4E1;
+}
+.services__list-link-holyday,
+.services__list-link-apparel {
+    max-width: 200px;
+}
+.services__list-holyday {
+    padding: 13px 0;
+}
+.services__list-accessories {
+    padding: 10px 0;
+}
+
+/* нижние переключатели */
+.services__div {
+    display: flex;
+}
+.services__div-arrow {
+    border: none;
+    background-color: #00000000;
+    padding:0 5px 2px 0;
+    margin: 9px 0 5px 1px;
+}
+.services__div-img {
+    padding: 3px 9px;
+    background-color: #70BBDC33;
+}
+
+.services__div-phrase {
+    display: flex;
+    font-family: 'Open Sans' sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    max-width: 550px;
+    margin-left: 17px;
+}
+
+/* 3й блок */
+.page {
+    display: flex;
+    margin-top: 72px;
+    justify-content: flex-start;
+}
+
+
+.page__list {
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+    padding: 0 120px;
+}
+.page__list-button {
+    display: flex;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.page__list-title {
+    font-family:'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    margin: 17px 0px 0 2px;
+}
+
+.page__list-credit,
+.page__list-guarantee,
+.page__list-delivery {
+    font-family: 'Crimson Text',sans-serif;
+    font-style: italic;
+    font-size: 25.7px;
+    margin-top: 19px;
+    line-height: 35px;
+}
+
+.page__list-delivery {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 25.5px;
+    background-color: #70BBDC33;
+    max-width: 326px;
+    font-weight: 700;
+    padding: 10px 180px 10px 60px;
+    margin: 8.5px 0 0 -60px;
+}
+.page__list-link,
+.page__list-text {
+    font-family: 'open sans', sans-serif;
+    font-size: 16px;
+}
+.page__list-guarantee {
+    margin-top: 8px;
+    margin-bottom: 2px;
+}
+.page__list-credit {
+    font-size: 26px;
+    margin-bottom: 22px;
+}
+.page__list-text {
+    font-size: 16px;
+    line-height: 22px;
+    min-width: 480px;
+    margin-top: 8px;
+    word-spacing: 0.15px;
+}
+.page__list-two {
+    margin-top: -1.5px;
+    white-space: break-spaces;
+}
+.page__list-subtitle {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 16px;
+    display: inline;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 10px 22px;
+}
+.page__list-item-link {
+    margin-top: 20.5px;
+}
+
+/* Логотипы */
+.social {
+    display: flex;
+    margin-top: 75px;
+}
+.social__list {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+.social__list-item:not(:last-child) {
+    margin-right: 127px;
+}
+
+/* Контакты */
+.contacts {
+    display: flex;
+    justify-content: space-around;
+    margin: 97px auto 152px;
+}
+ /* блоки */
+.contacts__aside,
+.contacts__promo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #E1F0F7;
+    min-width: 483px;
+    padding: 0 30px;
+}
+
+ /* заголовок блока */
+.contacts__promo-title,
+.contacts__aside-title {
+    font-weight: 700;
+    font-size: 38px;   
+}
+/* подзаголовок 1го блока */
+.contacts__promo-text-contacts {
+    font-family: 'Crimson Text',sans-serif;
+    font-style: italic;
+    font-size: 26px;
+}
+/* текст внутри блока */
+.contacts__promo-text,
+.contacts__aside-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    max-width: 483px;
+    line-height: 22px;
+}
+.contacts__promo {
+    padding-bottom: 40px;
+    margin-right: 57px;
+}
+.contacts__aside {
+    margin-bottom: 20px;
+    margin-right: 38px;
+}
+/* ссылка */
+.contacts__promo-subtitle {
+    display: inline;
+    font-size: 15px;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 11px 22px;
+}
+.contacts__promo-link {
+    margin: 2px 0 0 1px;
+}
+/* выравнивание содержимого */
+.contacts__promo-title {margin: -25px  0;}
+.contacts__aside-title {margin: -25px 0;}
+.contacts__promo-text-contacts {margin: 37px 0 0 1px;}
+.contacts__promo-text {
+    padding-bottom: 15px;
+    margin-top: 12px;
+    word-spacing: 0.2px;
+}
+.contacts__aside-text {
+    margin: 46.5px 2.5px 30px 0;
+    word-spacing: 0.2px;
+}
+.contacts__aside-img {margin:0 2px -180px 0;}

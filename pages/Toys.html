@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toys</title>
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/toys.css">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body>
     <header class="header container">
         <a class="header__logo" href="#">
-            <img class="header__logo-img" src="./images/Header/Union.png" alt="Logotype DLK" width="100" height="52">
+            <img class="header__logo-img" src="../images/Header/Union.png" alt="Logotype DLK" width="100" height="52">
         </a>
         <nav class="header__nav">
             <ul class="header__nav-list">
@@ -29,7 +34,7 @@
                 <div class="header__list-wrapper">
                     <form class="header__list-form">
                         <button class="header__list-btn" type="submit">
-                            <img class="header__list-icon" src="./images/Header/XMLID.png" alt="magnifying glass">
+                            <img class="header__list-icon" src="../images/Header/XMLID.png" alt="magnifying glass">
                         </button>
                     </form>
                 </div>
@@ -37,82 +42,88 @@
             <li class="header__list-item"><a class="header__list-link" href="#">CONTACT US</a></li>
         </ul>
     </header>
-    <h1 class="title">TOY FOR KIDS</h1>
-    <ul class="breadcrumps__list">
-        <li class="breadcrumps__list-item">
-            <p class="breadcrumps__list-text">Home</p>
-        </li>
-        <li class="breadcrumps__list-item">
-            <img src="../images/Category/Vector.png" alt="breadcrumps__list-vector" class="breadcrumps__list-img">
-        </li>
-        <li class="breadcrumps__list-item">
-            <p class="breadcrumps__list-text">Catalog</p>
-        </li>
-        <li class="breadcrumps__list-item">
-            <img src="../images/Category/Vector.png" alt="breadcrumps__list-vector" class="breadcrumps__list-img">
-        </li>
-        <li class="breadcrumps__list-item">
-            <p class="breadcrumps__list-text">Toys</p>
-        </li>
-    </ul>
-    <form class="form">
-        <ul class="form__range">
-            <li class="form__list-item">
-                <h2 class="form__list-text">Cost</h2>
-                <input type="range" class="form__list-input">
+    <section class="breadcrumps container">
+        <h1 class="breadcrumps__title">TOY FOR KIDS</h1>
+        <ul class="breadcrumps__list">
+            <li class="breadcrumps__list-item">
+                <p class="breadcrumps__list-text">Home</p>
+            </li>
+            <li class="breadcrumps__list-item">
+                <img class="breadcrumps__list-img" src="../images/Category/Vector(Stroke).png" alt="breadcrumps__list-vector">
+            </li>
+            <li class="breadcrumps__list-item">
+                <p class="breadcrumps__list-text">Catalog</p>
+            </li>
+            <li class="breadcrumps__list-item">
+                <img class="breadcrumps__list-img" src="../images/Category/Vector(Stroke).png" alt="breadcrumps__list-vector">
+            </li>
+            <li class="breadcrumps__list-item">
+                <p class="breadcrumps__list-text breadcrumps__list-toys">Toys</p>
             </li>
         </ul>
-        <ul class="form__list">
-            <li class="form__list-item">
-                <h2 class="form__list-text">Color</h2>
-            </li>
-            <li class="form__list-item">
-                <input type="checkbox" name="color-one" class="form__list-input" value="color-one"><br>
-            </li>
-            <li class="form__list-item">
-                <input type="checkbox" name="color-two" class="form__list-input" value="color-two"><br>
-            </li>
-            <li class="form__list-item">
-                <input type="checkbox" name="color-free" class="form__list-input" value="color-free"><br>
-            </li>
-            <li class="form__list-item">
-                <input type="checkbox" name="color-four" class="form__list-input" value="color-four">
-            </li>
-        </ul>
-        <ul class="form__list-aside">
-            <li class="form__list-item">
-                <h2 class="form__list-text">Delivery</h2>
-            </li>
-            <li class="form__list-item">
-                <input type="radio" class="form__list-input" id="free" name="shipping" value="free">
-                <label for="free">Free shipping</label>
-            </li>
-            <li class="form__list-item">
-                <input type="radio" class="form__list-input" id="fast" name="shipping" value="fast">
-                <label for="fast">Fast shipping</label>
-            </li>
-        </ul>
-        <ul class="form__list-form">
-            <li class="form__list-item">
-                <h2 class="form__list-text">Amount</h2> 
-            </li>
-            <li class="form__list-item">
-                <input type="button" class="form__list-button" value="0-5">    
-            </li>
-            <li class="form__list-item">
-                <input type="button" class="form__list-button" value="10-20">
-            </li>
-            <li class="form__list-item">
-                <input type="button" class="form__list-button" value="20-50">
-            </li>
-        </ul>
-        <ul class="form__list-btn">
-            <li class="form__list-item">
-                <input type="button" name="button" class="form__list-click" value="Apply">
-            </li>
-        </ul>
-    </form>
-    <section class="cards">
+    </section>
+    <div class="div">
+        <form class="div__form container">
+            <div class="div__form-range">
+                <p class="div__form-text">Cost</p>
+                <input class="div__form-slider" type="range" name="cost" min="0" max="500" value="100">
+            </div>
+            <ul class="div__form-list">
+                <li class="div__form-item">
+                    <p class="div__form-text">Color</p>
+                </li>
+                <li class="div__form-input">
+                    <input class="div__form-checkbox" type="checkbox" name="color-one" value="Black">
+                    <label class="div__form-label" for="Black">Black</label>
+                </li>
+                <li class="div__form-input">
+                    <input class="div__form-checkbox" type="checkbox" name="color-two" value="Blue">
+                    <label class="div__form-label" for="Blue">Blue</label>
+                </li>
+                <li class="div__form-input">
+                    <input class="div__form-checkbox" type="checkbox" name="color-free" value="Green">
+                    <label class="div__form-label" for="Green">Green</label>
+                </li>
+                <li class="div__form-input">
+                    <input class="div__form-checkbox" type="checkbox" name="color-four" value="White">
+                    <label class="div__form-label" for="White">White</label>
+                </li>
+            </ul>
+            <ul class="div__form-aside">
+                <li class="div__form-item">
+                    <p class="div__form-text">Delivery</p>
+                </li>
+                <li class="div__form-item">
+                    <input class="div-checkbox" type="radio" id="free" name="shipping" value="free">
+                    <label for="free">Free shipping</label>
+                </li>
+                <li class="div__form-item">
+                    <input class="div-checkbox" type="radio" id="fast" name="shipping" value="fast">
+                    <label for="fast">Fast shipping</label>
+                </li>
+            </ul>
+            <ul class="div__form-list">
+                <li class="div__form-item">
+                    <p class="div__form-text">Amount</p> 
+                </li>
+                <li class="div__form-item">
+                    <input class="div__form-button" type="button" value="0-5">    
+                </li>
+                <li class="div__form-item">
+                    <input class="div__form-button" type="button" value="10-20">
+                </li>
+                <li class="div__form-item">
+                    <input class="div__form-button" type="button" value="20-50">
+                </li>
+            </ul>
+            <ul class="div__form-btn">
+                <li class="div__form-item">
+                    <input class="div__form-click" type="button" name="button" value="Apply">
+                </li>
+            </ul>
+        </form>
+    </div>
+    <section class="cards container">
         <ul class="cards__list">
             <li class="cards__list-item">
                 <img src="../images/Category/shark.png" alt="cards__list-pic" class="cards__list-img">
@@ -160,112 +171,114 @@
             </li>
         </ul>
     </section>
-    <footer class="footer container">
-        <section class="footer__title">
-            <ul class="footer__title-listfooter">
-                <li class="footer__title-item">
-                    <p class="footer__title-text">Navigation</p>
-                </li>
-                <li class="footer__title-item">
-                    <p class="footer__title-text">Customer Information</p>
-                </li>
-                <li class="footer__title-item">
-                    <p class="footer__title-text">Connect</p>
-                </li>
-            </ul>
-        </section>
-        <section class="footer__info">
-            <ul class="footer__info-list">
-                <li class="footer__info-item text">
-                    <a class="footer__info-link" href="#">About Us</a>
-                </li>
-                <li class="footer__info-item text">
-                    <a class="footer__info-link" href="#">Blog</a>
-                </li>
-                <li class="footer__info-item text">
-                    <a class="footer__info-link" href="#">Design Services</a>
-                </li>
-                <li class="footer__info-item text">
-                    <a class="footer__info-link" href="#">Featured On</a>
-                </li>
-                <li class="footer__info-item text">
-                    <a class="footer__info-link" href="#">2018 Holiday Catalog</a>
-                </li>
-                <li class="footer__info-item text">
-                    <a class="footer__info-link" href="#">Shop By Designer</a>
-                </li>
-            </ul>
-            <ul class="footer__info-aside">   
-                <li class="footer__info-item text">
-                    <a class="footer__info-link" href="#">Contact Us</a>
-                </li>
-                <li class="footer__info-item text">
-                    <a class="footer__info-link" href="#">Sale Exclusions</a>
-                </li>
-                <li class="footer__info-item text">
-                    <a class="footer__info-link" href="#">Shipping & Returns</a>
-                </li>
-                <li class="footer__info-item text">
-                    <a class="footer__info-link" href="#">Terms & Conditions</a>
-                </li>
-                <li class="footer__info-item text">
-                    <a class="footer__info-link" href="#">Privacy Policy</a>
-                </li>
-                <li class="footer__info-item text">
-                    <a class="footer__info-link" href="#">Search</a>
-                </li>
-            </ul>
-            <ul class="footer__info-logo">
-                <li class="footer__info-email">
-                    <form class="footer__info-form">
-                        <input class="footer__info-input" type="email" name="Email" value="Email" required>
-                        <button class="footer__info-btn" type="submit">JOIN</button>
-                    </form>
-                </li>
-                <li class="footer__info-icon">
-                    <a class="footer__info-link" href="#">
-                        <img class="footer__info-img" src="./images/footer/Facebook.png" alt="Logotype Facebook">
-                    </a>
-                </li>
-                <li class="footer__info-icon">
-                    <a class="footer__info-link" href="#">
-                        <img class="footer__info-img" src="./images/footer/Twitter.png" alt="Logotype Twitter">
-                    </a>
-                </li>
-                <li class="footer__info-icon">
-                    <a class="footer__info-link" href="#">
-                        <img class="footer__info-img" src="./images/footer/Pinterest.png" alt="Logotype Pinterest">
-                    </a>
-                </li>
-                <li class="footer__info-icon">
-                    <a class="footer__info-link" href="#">
-                        <img class="footer__info-img" src="./images/footer/Instagram.png" alt="Logotype Instagram">
-                    </a>
-                </li>
-            </ul>
-        </section>
-        <section class="footer__subtitle">
-            <ul class="footer__subtitle-list">
-                <li class="footer__subtitle-item">
-                    <div class="footer__subtitle-rating">
-                        <p class="footer__subtitle-ratingStar">Company Rating</p>
-                        <div class="footer__subtitle-group">
-                            <input class="footer__subtitle-star" type="radio" name="rating" value="one" aria-label="terrible" checked>
-                            <input class="footer__subtitle-star" type="radio" name="rating" value="two" aria-label="bearable">
-                            <input class="footer__subtitle-star" type="radio" name="rating" value="free" aria-label="normally">
-                            <input class="footer__subtitle-star" type="radio" name="rating" value="four" aria-label="fine">
-                            <input class="footer__subtitle-star" type="radio" name="rating" value="five" aria-label="wonderful">
+    <footer class="footer">
+        <div class="container block">
+            <section class="footer__title">
+                <ul class="footer__title-listfooter">
+                    <li class="footer__title-item">
+                        <p class="footer__title-text" tabindex="0">Navigation</p>
+                    </li>
+                    <li class="footer__title-item">
+                        <p class="footer__title-text" tabindex="0">Customer Information</p>
+                    </li>
+                    <li class="footer__title-item">
+                        <p class="footer__title-text" tabindex="0">Connect</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="footer__info">
+                <ul class="footer__info-list">
+                    <li class="footer__info-item text">
+                        <a class="footer__info-link" href="#">About Us</a>
+                    </li>
+                    <li class="footer__info-item text">
+                        <a class="footer__info-link" href="#">Blog</a>
+                    </li>
+                    <li class="footer__info-item text">
+                        <a class="footer__info-link" href="#">Design Services</a>
+                    </li>
+                    <li class="footer__info-item text">
+                        <a class="footer__info-link" href="#">Featured On</a>
+                    </li>
+                    <li class="footer__info-item text">
+                        <a class="footer__info-link" href="#">2018 Holiday Catalog</a>
+                    </li>
+                    <li class="footer__info-item text">
+                        <a class="footer__info-link" href="#">Shop By Designer</a>
+                    </li>
+                </ul>
+                <ul class="footer__info-aside">   
+                    <li class="footer__info-item text">
+                        <a class="footer__info-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="footer__info-item text">
+                        <a class="footer__info-link" href="#">Sale Exclusions</a>
+                    </li>
+                    <li class="footer__info-item text">
+                        <a class="footer__info-link" href="#">Shipping & Returns</a>
+                    </li>
+                    <li class="footer__info-item text">
+                        <a class="footer__info-link" href="#">Terms & Conditions</a>
+                    </li>
+                    <li class="footer__info-item text">
+                        <a class="footer__info-link" href="#">Privacy Policy</a>
+                    </li>
+                    <li class="footer__info-item text">
+                        <a class="footer__info-link" href="#">Search</a>
+                    </li>
+                </ul>
+                <ul class="footer__info-logo">
+                    <li class="footer__info-email">
+                        <form class="footer__info-form">
+                            <input class="footer__info-input" aria-label="0" type="email" name="Email" value="Email" required>
+                            <button class="footer__info-btn" tabindex="0" type="submit">JOIN</button>
+                        </form>
+                    </li>
+                    <li class="footer__info-icon">
+                        <a class="footer__info-link" href="#">
+                            <img class="footer__info-img" src="../images/footer/Facebook.png" alt="Logotype Facebook">
+                        </a>
+                    </li>
+                    <li class="footer__info-icon">
+                        <a class="footer__info-link" href="#">
+                            <img class="footer__info-img" src="../images/footer/Twitter.png" alt="Logotype Twitter">
+                        </a>
+                    </li>
+                    <li class="footer__info-icon">
+                        <a class="footer__info-link" href="#">
+                            <img class="footer__info-img" src="../images/footer/Pinterest.png" alt="Logotype Pinterest">
+                        </a>
+                    </li>
+                    <li class="footer__info-icon">
+                        <a class="footer__info-link" href="#">
+                            <img class="footer__info-img" src="../images/footer/Instagram.png" alt="Logotype Instagram">
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="footer__subtitle">
+                <ul class="footer__subtitle-list">
+                    <li class="footer__subtitle-item">
+                        <div class="footer__subtitle-rating">
+                            <p class="footer__subtitle-ratingStar" tabindex="0">Company Rating</p>
+                            <div class="footer__subtitle-group">
+                                <input class="footer__subtitle-star" type="radio" name="rating" value="one" aria-label="terrible" checked>
+                                <input class="footer__subtitle-star" type="radio" name="rating" value="two" aria-label="bearable">
+                                <input class="footer__subtitle-star" type="radio" name="rating" value="free" aria-label="normally">
+                                <input class="footer__subtitle-star" type="radio" name="rating" value="four" aria-label="fine">
+                                <input class="footer__subtitle-star" type="radio" name="rating" value="five" aria-label="wonderful">
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li class="footer__subtitle-item">
-                    <p class="footer__subtitle-signature">Copyright © 2018 Dlk • Design Life Kids</p>
-                </li>
-                <li class="footer__subtitle-item">
-                    <a class="footer__subtitle-signature only" href="#"><p>Web Design — Direct Line Development</p></a>
-                </li>
-            </ul>
-        </section>
+                    </li>
+                    <li class="footer__subtitle-item">
+                        <p class="footer__subtitle-signature">Copyright © 2018 Dlk • Design Life Kids</p>
+                    </li>
+                    <li class="footer__subtitle-item">
+                        <a class="footer__subtitle-signature only" href="#"><p>Web Design — Direct Line Development</p></a>
+                    </li>
+                </ul>
+            </section>
+        </div>
     </footer>
 </body>
 </html>

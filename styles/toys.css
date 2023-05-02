@@ -1,0 +1,99 @@
+
+ /* хлебные крошки */
+.breadcrumps {
+    display: flex;
+    flex-direction: column;
+}
+/* заголовок */
+.breadcrumps__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+.breadcrumps__list {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+/* текст */
+.breadcrumps__list-text {
+    font-family: 'Crimson Text', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+}
+/* отступы */
+.breadcrumps__list-img {
+    margin: 0 20px;
+}
+/* прозрачность */
+.breadcrumps__list-toys {
+    opacity: 50%;
+}
+
+/* Форма */
+.div {
+    background-color: #7D97DA33;
+}
+.div__form {
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding-top: 25px;
+}
+.div__form-text {font-weight: 700;}
+
+    /* ползунок */
+.div__form-range {
+    position: relative;
+    width: 200px;
+    margin-top: 16px;
+    margin-right: 50px;
+}
+.div__form-slider {
+    position: absolute;
+    width: 180px;
+    height: 4px;
+    -webkit-appearance: none;
+    background-color: #C29974;
+    top: 60px;
+}
+
+/* чекбокс на цвет */
+.div__form-checkbox {
+    width: 19px;
+    height: 19px;
+}
+.div__form-checkbox:not(:last-child) {
+    margin-bottom: 18px;
+}
+.div__form-checkbox::before {
+    content: "";
+    display: block;
+    width: 19px;
+    height: 19px;
+    background-size: cover;
+    background-image: url(../images/toys/rectangle.png);
+}
+.div__form-checkbox:active:before {
+    content: "";
+    display: block;
+    text-decoration: none;
+    width: 19px;
+    height: 19px;
+    background-size: cover;
+    background-image: url(../images/toys/checkbox-activ.png);
+}
+.div__form-input:hover {
+    text-decoration: underline;
+}
+.div__form-input:active {
+    text-decoration: underline;
+}
+.div__form-input:disabled {
+    color: #908484;
+}
+.div__form-label {
+    margin-left: 10px;
+}
