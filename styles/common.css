@@ -5,13 +5,6 @@ button:active {background-color:#CFAF91;}
 
 button:disabled {background-color:#C7C1C1;}
 
-:focus {
-    color: #000000;
-    background-color: #fd6907;
-    border: 5px;
-    outline:invert;
-}
-.footer__subtitle-only:focus {color: #fff;}
 
 /* убрал точки */
 li {list-style-type: none;}
@@ -162,12 +155,12 @@ a {text-decoration: none;}
 .footer__info-link :active {opacity: 0.2;}
 
 /* именно для последнего подблока */
-.footer__subtitle-only {color: #A2A2A2;}
-.footer__subtitle-only :hover {
+.footer__subtitle-direct {color: #A2A2A2;}
+.footer__subtitle-direct :hover {
     color: #FFFFFF;
     text-decoration:underline;
 }
-.footer__subtitle-only :active {
+.footer__subtitle-direct :active {
     color: #FFFFFF;
     text-decoration:underline;
 }
@@ -263,6 +256,7 @@ a {text-decoration: none;}
     appearance: none;
 }
 .footer__subtitle-star:focus {
+    background-image:url(../images/Category/Star\ activ.png) ;
     outline: none;
 }
 .footer__subtitle-star:active,

@@ -7,16 +7,9 @@ button:active {background-color:#CFAF91;}
 
 button:disabled {background-color:#C7C1C1;}
 
-.footer__subtitle-only:focus {color: #fff;}
 
 .main__slider-offer:focus {
     background-color:#C7C1C1;
-}
-:focus {
-    color: #3c2168;
-    background-color: #fd6907;
-    border: 5px;
-    outline:invert;
 }
 
 p {font-family: 'Open Sans',sans-serif;}
@@ -24,13 +17,14 @@ h2 {font-family:'Montserrat', sans-serif;}
 
  /* MAIN */
 .container {
-    display: flex;
+    display: flex;  
     max-width: 1180px;
     justify-content: center;
 }
 /* БАННЕР */
 .main {
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: start;
     margin: 122px auto 90px;
@@ -109,10 +103,12 @@ h2 {font-family:'Montserrat', sans-serif;}
    /* МОНСТР */
 .main__slider-img {
     position: absolute;
-    height: 462px;
-    width: 635px;
-    left: 808px;
-    top: 142px;
+    height: 461px;
+    width: 635.5px;
+    left: 445px;
+    top: -90px;
+    border-radius: 0px;
+
 }
    /* Подзаголовок снизу */
 .main__slider-offer {
