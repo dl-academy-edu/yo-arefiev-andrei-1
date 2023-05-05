@@ -1,0 +1,139 @@
+
+
+
+
+
+ /* хлебные крошки */
+.breadcrumps {
+    display: flex;
+    flex-direction: column;
+}
+/* заголовок */
+.breadcrumps__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    margin:5px 0 0 0;
+}
+.breadcrumps__list {
+    display: flex;
+    align-items: baseline;
+    padding: 0;
+    max-width: 229px;
+    justify-content: flex-start;
+    margin: 15px 0 33px 1px;
+}
+.breadcrumps__list-item {
+    margin-right: 20px;
+}
+.breadcrumps__list-img {
+    margin-right: 5px;
+}
+/* текст */
+.breadcrumps__list-text {
+    font-family: 'Crimson Text', sans-serif;
+    font-style: italic;
+    font-size: 19.5px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #1E0606;
+}
+
+/* прозрачность */
+.breadcrumps__list-blog {
+    opacity: 50%;
+}
+
+/* содержимое */
+.blog {
+    display: flex;
+    flex-direction: column;
+}
+.blog__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: space-between;
+}
+.blog__list-item {
+    display: flex;
+    flex-direction: column;
+    max-width: 380px;
+}
+.blog__list-date {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 16px;
+    color: #818181;
+    margin-top: 22px;
+
+}
+.blog__list-img:hover {
+
+}
+.blog__list_desc {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #1E0606;
+    margin-top: -8px;
+    line-height: 31px;
+}
+.blog__list-title {
+    letter-spacing:0.22px;
+}
+.blog__list_desc:hover {
+    text-decoration:underline;
+    text-decoration-color: #807878;
+}
+.blog__list_desc:active {
+    text-decoration:underline;
+    text-decoration-color: #807878;
+}
+.blog__list-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+
+/* переключатели */
+.blog__control {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    padding: 0;
+    margin: -5px 0px 55px 0px;
+    align-items: center;
+}
+.blog__control-item {
+    display: inline;
+}
+.blog__control-number {
+    min-width: 234px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    padding: 0 30.7px;
+    margin-top: 1px;
+}
+.blog__control-img {
+    margin: 0;
+}
+.blog__control-number:hover {
+    color:#AAAAAA ;
+}
+.blog__control-number {
+    color: #1E0606;
+}
+.blog__control-one {
+    color: #C29974;
+}
+.blog__control-btn {
+    padding: 0;
+    background-color: transparent;
+}
+.blog__control-btn:hover {
+    padding: 0;
+    background-color: transparent;
+}
