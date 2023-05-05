@@ -1,3 +1,23 @@
+.visually-hidden {
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    clip:rect(0 0 0 0);
+    clip-path: inset(100%);
+}
+button {
+    background-color: #000000;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10.5px 22px;
+}
 button:hover {background-color:#C29974;}
 
 .services__div-img,
@@ -140,8 +160,6 @@ a {text-decoration: none;}
 }
 
 /* текст */
-. {box-sizing: border-box;}
-
 .footer__info-link, .footer__subtitle-list {
     font-family:'Open Sans', sans-serif;
     font-size: 16px;
@@ -214,13 +232,6 @@ a {text-decoration: none;}
 }
 .footer__info-form {
     display: flex;
-}
-.footer__info-btn {
-    background-color: #000000;
-    color: #fff;
-    font-family: 'Open Sans', sans-serif;
-    border: none;
-    padding: 9px 24px;
 }
 
 /* Звёздный Рейтинг */

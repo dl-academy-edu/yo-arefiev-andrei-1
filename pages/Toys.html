@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toys</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/toys.css">
-    <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -45,19 +45,19 @@
     <section class="breadcrumps container">
         <h1 class="breadcrumps__title">TOY FOR KIDS</h1>
         <ul class="breadcrumps__list">
-            <li class="breadcrumps__list-item">
+            <li class="breadcrumps__list-item" tabindex="0">
                 <p class="breadcrumps__list-text">Home</p>
             </li>
-            <li class="breadcrumps__list-item">
+            <li class="breadcrumps__list-item" tabindex="0">
                 <img class="breadcrumps__list-img" src="../images/Category/Vector(Stroke).png" alt="breadcrumps__list-vector">
             </li>
-            <li class="breadcrumps__list-item">
+            <li class="breadcrumps__list-item" tabindex="0">
                 <p class="breadcrumps__list-text">Catalog</p>
             </li>
-            <li class="breadcrumps__list-item">
+            <li class="breadcrumps__list-item" tabindex="0">
                 <img class="breadcrumps__list-img" src="../images/Category/Vector(Stroke).png" alt="breadcrumps__list-vector">
             </li>
-            <li class="breadcrumps__list-item">
+            <li class="breadcrumps__list-item" tabindex="0">
                 <p class="breadcrumps__list-text breadcrumps__list-toys">Toys</p>
             </li>
         </ul>
@@ -65,109 +65,107 @@
     <div class="div">
         <form class="div__form container">
             <div class="div__form-range">
-                <p class="div__form-text">Cost</p>
-                <input class="div__form-slider" type="range" name="cost" min="0" max="500" value="100">
+                <p class="div__form-text" tabindex="0">Cost</p>
+                <input class="div__form-slider" tabindex="0" type="range" name="cost" min="0" max="500" value="108">
+                <div class="div__form-numbers" tabindex="0">
+                    <label>0</label>
+                    <label>500</label>
+                </div>    
             </div>
-            <ul class="div__form-list">
-                <li class="div__form-item">
-                    <p class="div__form-text">Color</p>
-                </li>
-                <li class="div__form-input">
-                    <input class="div__form-checkbox" type="checkbox" name="color-one" value="Black">
-                    <label class="div__form-label" for="Black">Black</label>
-                </li>
-                <li class="div__form-input">
-                    <input class="div__form-checkbox" type="checkbox" name="color-two" value="Blue">
-                    <label class="div__form-label" for="Blue">Blue</label>
-                </li>
-                <li class="div__form-input">
-                    <input class="div__form-checkbox" type="checkbox" name="color-free" value="Green">
-                    <label class="div__form-label" for="Green">Green</label>
-                </li>
-                <li class="div__form-input">
-                    <input class="div__form-checkbox" type="checkbox" name="color-four" value="White">
-                    <label class="div__form-label" for="White">White</label>
-                </li>
-            </ul>
-            <ul class="div__form-aside">
-                <li class="div__form-item">
-                    <p class="div__form-text">Delivery</p>
-                </li>
-                <li class="div__form-item">
-                    <input class="div-checkbox" type="radio" id="free" name="shipping" value="free">
-                    <label for="free">Free shipping</label>
-                </li>
-                <li class="div__form-item">
-                    <input class="div-checkbox" type="radio" id="fast" name="shipping" value="fast">
-                    <label for="fast">Fast shipping</label>
-                </li>
-            </ul>
-            <ul class="div__form-list">
-                <li class="div__form-item">
-                    <p class="div__form-text">Amount</p> 
-                </li>
-                <li class="div__form-item">
-                    <input class="div__form-button" type="button" value="0-5">    
-                </li>
-                <li class="div__form-item">
-                    <input class="div__form-button" type="button" value="10-20">
-                </li>
-                <li class="div__form-item">
-                    <input class="div__form-button" type="button" value="20-50">
-                </li>
-            </ul>
-            <ul class="div__form-btn">
-                <li class="div__form-item">
-                    <input class="div__form-click" type="button" name="button" value="Apply">
-                </li>
-            </ul>
+            <div class="div__form-row">
+                <p class="div__form-title" tabindex="0">Color</p>
+                <div class="div__form-wrapper" tabindex="0">
+                    <input class="div__form-checkbox visually-hidden" type="checkbox" id="black">
+                    <label class="div__form-label" for="black">Black</label>
+                </div>
+                <div class="div__form-wrapper" tabindex="0">
+                    <input class="div__form-checkbox visually-hidden" type="checkbox" id="blue">
+                    <label class="div__form-label" for="blue">Blue</label>
+                </div>
+                <div class="div__form-wrapper" tabindex="0">
+                    <input class="div__form-checkbox visually-hidden" type="checkbox" id="green">
+                    <label class="div__form-label" for="green">Green</label>
+                </div>
+                <div class="div__form-wrapper" tabindex="0">
+                    <input class="div__form-checkbox visually-hidden" type="checkbox" id="white">
+                    <label class="div__form-label" for="white">White</label>
+                </div>
+            </div>
+            <div class="div__form-aside">
+                <p class="div__form-text" tabindex="0">Delivery</p>
+                <div class="div__form-div" tabindex="0">
+                    <input class="div__form-radio visually-hidden" type="radio" name="delivery" value="Free shipping" id="free">
+                    <label class="div__form-caption" for="free">Free shipping</label>
+                </div>  
+                <div class="div__form-div" tabindex="0">  
+                    <input class="div__form-radio visually-hidden" type="radio" name="delivery" value="Fast shipping" id="fast">
+                    <label class="div__form-caption" for="fast">Fast shipping</label>
+                </div>
+            </div>
+            <div class="div__form-wrap">
+                <p class="div__form-text" tabindex="0">Amount</p> 
+                <ul class="div__form-list">
+                    <li class="div__form-item" tabindex="0">
+                        <input class="div__form-button div__form-activ" type="button" value="0-5">    
+                    </li>
+                    <li class="div__form-item" tabindex="0">
+                        <input class="div__form-button" type="button" value="10-20">
+                    </li>
+                    <li class="div__form-item" tabindex="0">
+                        <input class="div__form-button" type="button" value="20-50">
+                    </li>
+                </ul>
+            </div>
+            <div class="div__form-btn">
+                <button tabindex="0">APPLY</button>
+            </div>
         </form>
     </div>
     <section class="cards container">
         <ul class="cards__list">
-            <li class="cards__list-item">
+            <li class="cards__list-item" tabindex="0">
                 <img src="../images/Category/shark.png" alt="cards__list-pic" class="cards__list-img">
-                <p class="cards__list-text">SHARKY BEAN BAG CHAIR COVER</p>
-                <h2 class="cards__list-subtitle">$60.00 USD</h2>
+                <p class="cards__list-text" tabindex="0">SHARKY BEAN BAG CHAIR COVER</p>
+                <h2 class="cards__list-subtitle" tabindex="0">$60.00 USD</h2>
             </li>
-            <li class="cards__list-item">
+            <li class="cards__list-item" tabindex="0">
                 <img src="../images/Category/brass.png" alt="cards__list-pic" class="cards__list-img">
-                <p class="cards__list-text">BRASS DECO FRAMES</p>
-                <h2 class="cards__list-subtitle">$66.00 USD</h2>
+                <p class="cards__list-text" tabindex="0">BRASS DECO FRAMES</p>
+                <h2 class="cards__list-subtitle" tabindex="0">$66.00 USD</h2>
             </li>
-            <li class="cards__list-item">
+            <li class="cards__list-item" tabindex="0">
                 <img src="../images/Category/cibo.png" alt="cards__list-pic" class="cards__list-img">
-                <p class="cards__list-text">CIBO FULL APRON</p>
-                <h2 class="cards__list-subtitle">$60.00 USD</h2>
+                <p class="cards__list-text" tabindex="0">CIBO FULL APRON</p>
+                <h2 class="cards__list-subtitle" tabindex="0">$60.00 USD</h2>
             </li>
-            <li class="cards__list-item">
+            <li class="cards__list-item" tabindex="0">
                 <img src="../images/Category/gatcha.png" alt="cards__list-pic" class="cards__list-img">
-                <p class="cards__list-text">GATCHA GATCHA GUMBALL MACHINE</p>
-                <h2 class="cards__list-subtitle">$56.00 USD</h2>
+                <p class="cards__list-text" tabindex="0">GATCHA GATCHA GUMBALL MACHINE</p>
+                <h2 class="cards__list-subtitle" tabindex="0">$56.00 USD</h2>
             </li>
-            <li class="cards__list-item">
+            <li class="cards__list-item" tabindex="0">
                 <img src="../images/Category/advent.png" alt="cards__list-pic" class="cards__list-img">
-                <p class="cards__list-text">CHRISTMAS ADVENT SCENTED CANDLE</p>
-                <h2 class="cards__list-subtitle">$29.00 USD</h2>
+                <p class="cards__list-text" tabindex="0">CHRISTMAS ADVENT SCENTED CANDLE</p>
+                <h2 class="cards__list-subtitle" tabindex="0">$29.00 USD</h2>
             </li>
-            <li class="cards__list-item">
+            <li class="cards__list-item cards__list-desc" tabindex="0">
                 <img src="../images/Category/tea.png" alt="cards__list-pic" class="cards__list-img">
-                <p class="cards__list-text">TANGLE SPINNING TEA LIGHT</p>
-                <h2 class="cards__list-subtitle">$56.00 USD</h2>
+                <p class="cards__list-text" tabindex="0">TANGLE SPINNING TEA LIGHT</p>
+                <h2 class="cards__list-subtitle" tabindex="0">$56.00 USD</h2>
             </li>
         </ul>
-        <ul class="cards__list">
-            <li class="cards__list-item">
-                <img src="../images/Category/Vector+.png" alt="cards__list-arrow" class="cards__list-img">
+        <ul class="cards__click">
+            <li class="cards__click-control">
+                <img class="cards__click-img" src="../images/Category/Vector+.png" alt="cards__list-arrow"  tabindex="0">
             </li>
-            <li class="cards__list-item">
-                <p class="cards__list-number">1</p>
-                <p class="cards__list-number">2</p>
-                <p class="cards__list-number">3</p>
-                <p class="cards__list-number">4</p> 
+            <li class="cards__click-numbers">
+                <p class="cards__click-number cards__click-one" tabindex="0">1</p>
+                <p class="cards__click-number" tabindex="0">2</p>
+                <p class="cards__click-number" tabindex="0">3</p>
+                <p class="cards__click-number" tabindex="0">4</p> 
             </li>
-            <li class="cards__list-item">
-                <img src="../images/Category/Vector-.png" alt="cards__list-arrow" class="cards__list-img">
+            <li class="cards__click-control">
+                <img class="cards__click-img" src="../images/Category/Vector-.png" alt="cards__list-arrow"  tabindex="0">
             </li>
         </ul>
     </section>
@@ -274,7 +272,7 @@
                         <p class="footer__subtitle-signature">Copyright © 2018 Dlk • Design Life Kids</p>
                     </li>
                     <li class="footer__subtitle-item">
-                        <a class="footer__subtitle-signature only" href="#"><p>Web Design — Direct Line Development</p></a>
+                        <a class="footer__subtitle-signature footer__subtitle-direct" href="#"><p>Web Design — Direct Line Development</p></a>
                     </li>
                 </ul>
             </section>

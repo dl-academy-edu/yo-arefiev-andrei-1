@@ -1,3 +1,13 @@
+/* доступность */
+.services__div-img,
+button:hover {background-color:#C29974;}
+
+.services__div-img,
+button:active {background-color:#CFAF91;}
+
+button:disabled {background-color:#C7C1C1;}
+
+
 
  /* хлебные крошки */
 .breadcrumps {
@@ -8,23 +18,27 @@
 .breadcrumps__title {
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
-    margin-bottom: 0;
+    margin:5px 0 0 0;
 }
 .breadcrumps__list {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     padding: 0;
-    margin: 0 0 30px 0;
+    max-width: 229px;
+    justify-content: space-between;
+    margin-top: -6px;
+    margin-bottom: 30px;
 }
+
 /* текст */
 .breadcrumps__list-text {
     font-family: 'Crimson Text', sans-serif;
     font-style: italic;
     font-size: 20px;
+    line-height: 26px;
 }
-/* отступы */
-.breadcrumps__list-img {
-    margin: 0 20px;
+.breadcrumps__list-toys {
+    letter-spacing: 0.6px;
 }
 /* прозрачность */
 .breadcrumps__list-toys {
@@ -40,60 +54,215 @@
     justify-content: flex-start;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    padding-top: 25px;
+    padding: 28px 0 42px;
 }
 .div__form-text {font-weight: 700;}
 
     /* ползунок */
-.div__form-range {
-    position: relative;
-    width: 200px;
-    margin-top: 16px;
-    margin-right: 50px;
-}
 .div__form-slider {
-    position: absolute;
-    width: 180px;
+    position: relative;
+    width: 190px;
     height: 4px;
+    margin: 22px 0 18px 4px;
     -webkit-appearance: none;
-    background-color: #C29974;
-    top: 60px;
+    background: #C29974;
+    outline: none;
+    border-radius: none;
+}
+.div__form-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    background: #fff;
+    border: 9px solid #C29974;
+}
+.div__form-slider:hover::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    background: #fff;
+    border: 9px solid #C29974;
+    margin-top: -10px;
+}
+.div__form-slider:hover::-webkit-slider-runnable-track {
+    background: #000;
+    margin-top: px;
+    height: 4px;
+}
+.div__form-numbers {
+    display: flex;
+    justify-content: space-between;
+    min-width: 207px;
+    margin-right: 95px;
 }
 
+
 /* чекбокс на цвет */
+.div__form-wrapper:not(:last-child) {
+    margin-bottom: 18.5px;
+}
+.div__form-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 19px;
+}
 .div__form-checkbox {
-    width: 19px;
-    height: 19px;
-}
-.div__form-checkbox:not(:last-child) {
-    margin-bottom: 18px;
-}
-.div__form-checkbox::before {
-    content: "";
-    display: block;
-    width: 19px;
-    height: 19px;
-    background-size: cover;
-    background-image: url(../images/toys/rectangle.png);
-}
-.div__form-checkbox:active:before {
-    content: "";
-    display: block;
-    text-decoration: none;
-    width: 19px;
-    height: 19px;
-    background-size: cover;
-    background-image: url(../images/toys/checkbox-activ.png);
-}
-.div__form-input:hover {
-    text-decoration: underline;
-}
-.div__form-input:active {
-    text-decoration: underline;
-}
-.div__form-input:disabled {
-    color: #908484;
+    margin-right:-5px;
 }
 .div__form-label {
-    margin-left: 10px;
+    position: relative;
+    padding-left: 30px;
+
+}
+
+.div__form-label::after,
+.div__form-label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 19px;
+    height: 19px;
+}
+.div__form-checkbox + .div__form-label::after {
+    background-image: url(../images/toys/checkbox.png);
+}
+.div__form-checkbox:checked + .div__form-label::before {
+    background-image: url(../images/toys/checkbox-activ.png);
+}
+
+/* радиокнопки */
+.div__form-aside {
+    display: flex;
+    flex-direction: column;
+    margin-left: 124px;
+}
+.div__form-text {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+.div__form-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.div__form-caption {
+    position: relative;
+    padding: 14.5px 0 0 30px;
+}
+
+.div__form-caption::after, 
+.div__form-caption::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+}
+.div__form-radio + .div__form-caption::after {
+    background-image: url(../images/toys/Ellipse.png);
+}
+.div__form-radio:checked + .div__form-caption::before {
+    background-image: url(../images/toys/ellipse-active.png);
+}
+
+/* Блок с выбором */
+.div__form-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+}
+.div__form-list {
+    display: flex;
+    padding: 10px;
+    margin: 2px 60px 0 -10px;
+    min-width: 240px;
+}
+.div__form-button {
+    border: none;
+    padding: 8px 19.5px;
+    background-color: #fff;
+}
+.div__form-activ {
+    background-color: #F3D0DB;
+    padding: 8px 27px;
+}
+.div__form-button:hover {
+    background-color: #EDDEEB;
+}
+ /* Кнопка */
+
+.div__form-btn {
+    margin-top: 51px;
+    margin-left: -10px;
+}
+/* содержимое */
+.cards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    padding-bottom:  50px 0;
+}
+.cards__list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+}
+.cards__list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cards__list-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin-top: 32px;
+    font-weight: 500;
+}
+.cards__list-subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 5px 0 47px 0;
+}
+.cards__list-desc {
+    margin-top: 4px;
+}
+
+/* переключатели */
+.cards__click {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: 48px;
+    align-items: center;
+}
+.cards__click-numbers {
+    display:flex;
+    justify-content: space-between;
+    min-width: 234px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+}
+.cards__click-number:hover {
+    color:#AAAAAA ;
+}
+.cards__click-one {
+    color: #C29974;
+}
+
+
+.footer__info-btn {
+    font-family: 'Open Sans', sans-serif;
+    padding: 12px 22.5px 10px 22.5px;
+}
+.footer {
+    padding-top: 69px;
 }

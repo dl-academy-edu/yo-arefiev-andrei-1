@@ -1,3 +1,16 @@
+/* доступность */
+.services__div-img,
+button:hover {background-color:#C29974;}
+
+.services__div-img,
+button:active {background-color:#CFAF91;}
+
+button:disabled {background-color:#C7C1C1;}
+
+
+
+
+
 .block{
     display: flex;
 }
