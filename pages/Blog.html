@@ -14,16 +14,16 @@
 </head>
 <body>
     <header class="header container">
-        <a class="header__logo" href="#">
+        <a class="header__logo" href="../index.html">
             <img class="header__logo-img" src="../images/Header/Union.png" alt="Logotype DLK" width="100" height="52">
         </a>
         <nav class="header__nav">
             <ul class="header__nav-list">
                 <li class="header__nav-item">
-                    <a class="header__nav-link" href="#">BLOG</a>
+                    <a class="header__nav-link" href="../pages/blog.html">BLOG</a>
                 </li>
                 <li class="header__nav-item">
-                    <a class="header__nav-link" href="#">CATALOG</a>
+                    <a class="header__nav-link" href="../pages/catalog.html">CATALOG</a>
                 </li>
                 <li class="header__nav-item">
                     <a class="header__nav-link" href="#">ABOUT US</a>
@@ -34,28 +34,23 @@
             <li class="header__list-item">
                 <div class="header__list-wrapper">
                     <form class="header__list-form">
-                        <button class="header__list-btn" type="submit">
-                            <img class="header__list-icon" src="../images/Header/XMLID.png" alt="magnifying glass">
-                        </button>
+                        <button class="header__list-btn" type="submit" aria-label="search"></button>
                     </form>
                 </div>
             </li>
-            <li class="header__list-item"><a class="header__list-link" href="#">CONTACT US</a></li>
+            <li class="header__list-item"><a class="header__list-link" href="../pages/contactUs.html">CONTACT US</a></li>
         </ul>
     </header>
-    <section class="breadcrumps container">
-        <h1 class="breadcrumps__title" tabindex="0">BLOG</h1>
-        <ul class="breadcrumps__list">
-            <li class="breadcrumps__list-item">
-                <a class="breadcrumps__list-text" href="#" tabindex="0">Home</a>
+    <section class="breadcrumbs container">
+        <h1 class="breadcrumbs__title" tabindex="0">BLOG</h1>
+        <ol class="breadcrumbs__list">
+            <li class="breadcrumbs__list-item">
+                <a class="breadcrumbs__list-link" href="../index.html" tabindex="0">Home</a>
             </li>
-            <li class="breadcrumps__list-item" tabindex="0">
-                <img class="breadcrumps__list-img" src="../images/toys/vectorStroke.svg" alt="breadcrumps__list-vector">
+            <li class="breadcrumbs__list-item breadcrumbs__list-text" >
+                <a class="breadcrumbs__list-link" href="../pages/blog.html" tabindex="0">Blog</a> 
             </li>
-            <li class="breadcrumps__list-item" tabindex="0">
-                <a class="breadcrumps__list-text breadcrumps__list-blog" href="#" tabindex="0">Blog</a>
-            </li>
-        </ul>
+        </ol>
     </section>
     <section class="blog container">
         <ul class="blog__list">
@@ -96,22 +91,18 @@
                 <p class="blog__list-text" tabindex="0">Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.</p>
             </li>
         </ul>
-        <ul class="blog__control">
-            <li>
-                <button class="blog__control-btn">
-                    <img class="blog__control-img" src="../images/toys/vectorLeft.svg" alt="blog__control-arrow">
-                </button>
+        <ul class="blog__click">
+            <li class="blog__click-control">
+                <button class="blog__click-btn blog__click-arrowLeft" type="button" aria-label="arrow"></button>
             </li>
-            <li class="blog__control-item">
-            <a href="#" class="blog__control-number blog__control-one">1</a>
-            <a href="#" class="blog__control-number">2</a>
-            <a href="#" class="blog__control-number">3</a>
-            <a href="#" class="blog__control-number">4</a>
+            <li class="blog__click-numbers">
+                <p class="blog__click-number blog__click-one" tabindex="0">1</p>
+                <p class="blog__click-number" tabindex="0">2</p>
+                <p class="blog__click-number" tabindex="0">3</p>
+                <p class="blog__click-number" tabindex="0">4</p> 
             </li>
-            <li>
-                <button class="blog__control-btn">
-                    <img class="blog__control-img" src="../images/toys/vectorRight.svg" alt="blog__control-arrow">
-                </button>
+            <li class="blog__click-control">
+                <button class="blog__click-btn blog__click-arrowRight" type="button" aria-label="arrow"></button>
             </li>
         </ul>
     </section>
@@ -180,44 +171,49 @@
                     </li>
                     <li class="footer__info-icon">
                         <a class="footer__info-link" href="#">
-                            <img class="footer__info-img" src="../images/footer/Facebook.png" alt="Logotype Facebook">
+                            <img class="footer__info-img" src="../images/footer/facebook.svg" alt="Logotype Facebook">
                         </a>
                     </li>
                     <li class="footer__info-icon">
                         <a class="footer__info-link" href="#">
-                            <img class="footer__info-img" src="../images/footer/Twitter.png" alt="Logotype Twitter">
+                            <img class="footer__info-img" src="../images/footer/twitter.svg" alt="Logotype Twitter">
                         </a>
                     </li>
                     <li class="footer__info-icon">
                         <a class="footer__info-link" href="#">
-                            <img class="footer__info-img" src="../images/footer/Pinterest.png" alt="Logotype Pinterest">
+                            <img class="footer__info-img" src="../images/footer/pinterest.svg" alt="Logotype Pinterest">
                         </a>
                     </li>
                     <li class="footer__info-icon">
                         <a class="footer__info-link" href="#">
-                            <img class="footer__info-img" src="../images/footer/Instagram.png" alt="Logotype Instagram">
+                            <img class="footer__info-img" src="../images/footer/instagram.svg" alt="Logotype Instagram">
                         </a>
                     </li>
                 </ul>
             </section>
             <section class="footer__subtitle">
                 <ul class="footer__subtitle-list">
-                    <li class="footer__subtitle-item">
+                    <li class="footer__subtitle-wrapper">
+                        <p class="subtitle__signature" tabindex="0">Company Rating</p>
                         <div class="footer__subtitle-rating">
-                            <p class="footer__subtitle-ratingStar" tabindex="0">Company Rating</p>
-                            <div class="footer__subtitle-group">
-                                <input class="footer__subtitle-star" type="radio" name="rating" value="one" aria-label="terrible" checked>
-                                <input class="footer__subtitle-star" type="radio" name="rating" value="two" aria-label="bearable">
-                                <input class="footer__subtitle-star" type="radio" name="rating" value="free" aria-label="normally">
-                                <input class="footer__subtitle-star" type="radio" name="rating" value="four" aria-label="fine">
-                                <input class="footer__subtitle-star" type="radio" name="rating" value="five" aria-label="wonderful">
+                            <div class="footer__subtitle-items">
+                                <input class="footer__subtitle-item" id="rating__star-five" type="radio" name="rating" value="five">
+                                <label class="footer__subtitle-label" for="rating__star-five"></label>
+                                <input class="footer__subtitle-item" id="rating__star-four" type="radio" name="rating" value="four">
+                                <label class="footer__subtitle-label" for="rating__star-four"></label>
+                                <input class="footer__subtitle-item" id="rating__star-free" type="radio" name="rating" value="free">
+                                <label class="footer__subtitle-label" for="rating__star-free"></label>
+                                <input class="footer__subtitle-item" id="rating__star-two" type="radio" name="rating" value="two">
+                                <label class="footer__subtitle-label" for="rating__star-two"></label>
+                                <input class="footer__subtitle-item" id="rating__star-one" type="radio" name="rating" value="one">
+                                <label class="footer__subtitle-label" for="rating__star-one"></label>
                             </div>
                         </div>
                     </li>
-                    <li class="footer__subtitle-item">
-                        <p class="footer__subtitle-signature">Copyright © 2018 Dlk • Design Life Kids</p>
+                    <li class="footer__subtitle-text">
+                        <p class="footer__subtitle-signature subtitle__signature-title">Copyright © 2018 Dlk • Design Life Kids</p>
                     </li>
-                    <li class="footer__subtitle-item">
+                    <li class="footer__subtitle-text">
                         <a class="footer__subtitle-signature footer__subtitle-direct" href="#"><p>Web Design — Direct Line Development</p></a>
                     </li>
                 </ul>

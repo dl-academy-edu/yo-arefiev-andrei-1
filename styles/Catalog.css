@@ -10,36 +10,52 @@ button:disabled {background-color:#C7C1C1;}
 
 
 
-
-.block{
+/* хлебные крошки */
+.breadcrumbs {
     display: flex;
+    flex-direction: column;
 }
 /* заголовок */
-.block__title {
-    font-family: 'Montserrat';
+.breadcrumbs__title {
+    font-family: 'Montserrat', sans-serif;
     font-size: 40px;
-    margin: 5px 0 -17px;
+    margin:5px 0 0 0;
 }
-
-/* хлебные крошки */
-.block__breadcrumps {
+.breadcrumbs__list {
     display: flex;
-    align-items: center;
-    padding-left: 0;
-
+    align-items: baseline;
+    padding: 0;
+    max-width: 146px;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 32px;
 }
-.block__breadcrumps-img {
-    margin: 5px 20px 0;
+.breadcrumbs__list-item:not(:last-child)::after {
+    display: inline-block;
+    content: "";
+    border-top: 2px solid #1E0606;
+    border-right: 2px solid #1E0606;
+    transform: rotate(45deg);
+    width: 7px;
+    height: 7px;
+    margin-left: 13px;
 }
-.block__breadcrumps-text {
-    font-family: 'Crimson Text'sans-serif;
+/* текст */
+.breadcrumbs__list-text,
+.breadcrumbs__list-link {
+    font-family: 'Crimson Text', sans-serif;
     font-style: italic;
-    font-size: 18px;
-    margin-right: -1.5px;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000;
 }
-.catalog {
+
+/* прозрачность */
+.breadcrumbs__list-text {
     opacity: 50%;
 }
+
+
 /* блоки с каталогом */
 .block__services {
     display: flex;
@@ -105,6 +121,12 @@ button:disabled {background-color:#C7C1C1;}
     max-width: 200px;
     font-weight: 700;
 }
+.block__services-link:hover {
+    text-decoration:underline;
+}
+.block__services-link:active {
+    text-decoration:underline;
+}
 
 /* ОПИСАНИЕ ПРОДУКТА */
 .block__desc {
@@ -112,7 +134,7 @@ button:disabled {background-color:#C7C1C1;}
     flex-direction: column;
     max-width: 680px;
     padding:0 100px 39px 0;
-    margin-bottom: -1.5px;
+    margin-top: -1px;
 }
 /* Подзаголовок */
 .block__desc-subtitle {
@@ -126,12 +148,13 @@ button:disabled {background-color:#C7C1C1;}
 }
 .block__desc-text-one {
     margin: -4px 0 0 1px;
-    line-height: 21px;    
+    line-height: 22px;    
 }
 .block__desc-text-two {
-    margin: 16px 0 0 1px;
+    margin: 15px 0 0 1px;
     line-height: 22px;  
 }
 .block__desc-text-free {
     line-height: 21.5px;  
+    margin-bottom: 15px;
 }

@@ -5,22 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contaform</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/ContactUs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:wght@400;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <a href="#" class="header__logo">
-            <img src="../images/Header/Union.png" alt="Logotype DLK" class="header__logo-img" >
+    <header class="header container">
+        <a class="header__logo" href="../index.html">
+            <img class="header__logo-img" src="../images/Header/Union.png" alt="Logotype DLK" width="100" height="52">
         </a>
         <nav class="header__nav">
             <ul class="header__nav-list">
                 <li class="header__nav-item">
-                    <a href="#" class="header__nav-link">BLOG</a>
+                    <a class="header__nav-link" href="../pages/blog.html">BLOG</a>
                 </li>
                 <li class="header__nav-item">
-                    <a href="#" class="header__nav-link">CATALOG</a>
+                    <a class="header__nav-link" href="../pages/catalog.html">CATALOG</a>
                 </li>
                 <li class="header__nav-item">
-                    <a href="#" class="header__nav-link">ABOUT US</a>
+                    <a class="header__nav-link" href="#">ABOUT US</a>
                 </li>
             </ul>
         </nav>
@@ -28,61 +34,65 @@
             <li class="header__list-item">
                 <div class="header__list-wrapper">
                     <form class="header__list-form">
-                        <input type="text" placeholder="Search here..." class="header__list-input">
-                        <button type="submit">
-                            <img src="../images/Header/XMLID.png" alt="magnifying glass" class="header__list-icon">
-                        </button>
+                        <button class="header__list-btn" type="submit" aria-label="search"></button>
                     </form>
                 </div>
             </li>
-            <li class="header__list-item"><a href="#">CONTACT US</a></li>
+            <li class="header__list-item"><a class="header__list-link" href="../pages/contactUs.html">CONTACT US</a></li>
         </ul>
     </header>
-    <h1 class="title">CONTACT US</h1>
-    <ul class="breadcrumps__list">
-        <li class="breadcrumps__list-item">
-            <p class="breadcrumps__list-text">Home</p>
-        </li>
-        <li class="breadcrumps__list-item">
-            <img src="../images/Category/Vector.png" alt="breadcrumps__list-vector" class="breadcrumps__list-img">
-        </li>
-        <li class="breadcrumps__list-item">
-            <p class="breadcrumps__list-text">Contact us</p>
-        </li>
-    </ul> 
-    <div class="form">
-        <fobreadcrumps action="#" method="get" class="form__form">
-            <ul class="form__form-list">
-                <li class="form__form-item">
-                    <label class="form__form-label" for="name">Name:</label>
-                    <input type="text" name="name" class="form__form-input" id="name" required>
-                </li>
-                <li class="form__form-item">
-                    <label class="form__items-label" for="phone">Phone:</label>
-                    <input type="text" name="phone" class="form__items-input" id="phone" required>
-                </li>
-                <li class="form__form-item">
-                    <label class="form__items-label" for="mail">Email:</label>
-                    <input type="email" name="email" class="form__items-input" id="mail" required>
-                </li>
-                <li class="form__form-item">
-                    <label class="form__items-label" for="message">Message:</label>
-                    <input type="text" name="message" class="form__items-input" id="message" required>
-                </li>
-            </ul>
-            <ul class="form__list">
-                <li class="form__list-item">
-                    <img src="../images/Category/Vec.png" class="form__list-icon" alt="icon">
-                </li>
-                <li class="form__list-item">
-                    <img src="../images/Category/Rect.png" class="form__list-icon" alt="icon">
-                </li>
-                <li class="form__list-item">
-                    <p class="form__list-text">By clicking on the button, you consent to the processing of your personal data</p>
-                    <input type="submit" class="submit" value="SUBMIT">
-                </li>
-            </ul>
-        </fobreadcrumps>
+    <section class="breadcrumbs container">
+        <h1 class="breadcrumbs__title" tabindex="0">CONTACT US</h1>
+        <ol class="breadcrumbs__list">
+            <li class="breadcrumbs__list-item">
+                <a class="breadcrumbs__list-link" href="../index.html" tabindex="0">Home</a>
+            </li>
+            <li class="breadcrumbs__list-item breadcrumbs__list-text" >
+                <a class="breadcrumbs__list-link" href="../pages/contactUs.html" tabindex="0">Contact Us</a> 
+            </li>
+        </ol>
+    </section>
+    <div class="div container">
+        <div class="div__form">
+            <form class="div__form-inner" action="#" method="post">
+                <div class="div__form-wrapper">
+                    <label class="div__form-label" for="name">Name</label>
+                    <input class="div__form-input" type="text" id="name" placeholder="Ivan Ivanov">
+                </div>
+                <div class="div__form-wrapperTwo">
+                    <div class="div__form-wrap">
+                        <label class="div__form-label" for="phone">Phone</label>
+                        <input class="div__form-input" type="tel" id="phone">
+                    </div>
+                    <div class="div__form-wrap">
+                        <label class="div__form-label" for="mail">Email</label>
+                        <input class="div__form-input" type="email" id="mail">               
+                    </div>
+                </div>
+                <div class="div__form-wrapperFree">
+                    <label class="div__form-label" for="massage">Massage</label>
+                    <textarea class="div__form-textarea" id="massage" cols="61" rows="7"></textarea>
+                </div>
+                <div class="div__form-wrapperCheck">
+                    <label class="div__form-text">By clicking on the button, you consent to the processing of your personal data
+                        <input class="div__form-checkbox" type="checkbox" checked>
+                        <span class="div__form-span"></span>
+                    </label>
+                </div>
+                <button class="div__form-btn" type="submit">SUBMIT</button>
+            </form>
+        </div>
+        <ul class="div__list">
+            <li class="div__list-item">
+                <p class="div__list-text">Our support team are on-hand to assist with any issues you are experiencing.</p>
+            </li>
+            <li class="div__list-item">
+                <p class="div__list-text">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+            </li>
+            <li class="div__list-item">
+                <h2 class="div__list-subtitle">An expert is waiting to help you!</h2>
+            </li>
+        </ul>
     </div>
     <footer class="footer">
         <div class="container block">
@@ -149,45 +159,50 @@
                     </li>
                     <li class="footer__info-icon">
                         <a class="footer__info-link" href="#">
-                            <img class="footer__info-img" src="./images/footer/Facebook.png" alt="Logotype Facebook">
+                            <img class="footer__info-img" src="../images/footer/facebook.svg" alt="Logotype Facebook">
                         </a>
                     </li>
                     <li class="footer__info-icon">
                         <a class="footer__info-link" href="#">
-                            <img class="footer__info-img" src="./images/footer/Twitter.png" alt="Logotype Twitter">
+                            <img class="footer__info-img" src="../images/footer/twitter.svg" alt="Logotype Twitter">
                         </a>
                     </li>
                     <li class="footer__info-icon">
                         <a class="footer__info-link" href="#">
-                            <img class="footer__info-img" src="./images/footer/Pinterest.png" alt="Logotype Pinterest">
+                            <img class="footer__info-img" src="../images/footer/pinterest.svg" alt="Logotype Pinterest">
                         </a>
                     </li>
                     <li class="footer__info-icon">
                         <a class="footer__info-link" href="#">
-                            <img class="footer__info-img" src="./images/footer/Instagram.png" alt="Logotype Instagram">
+                            <img class="footer__info-img" src="../images/footer/instagram.svg" alt="Logotype Instagram">
                         </a>
                     </li>
                 </ul>
             </section>
             <section class="footer__subtitle">
                 <ul class="footer__subtitle-list">
-                    <li class="footer__subtitle-item">
+                    <li class="footer__subtitle-wrapper">
+                        <p class="subtitle__signature" tabindex="0">Company Rating</p>
                         <div class="footer__subtitle-rating">
-                            <p class="footer__subtitle-ratingStar" tabindex="0">Company Rating</p>
-                            <div class="footer__subtitle-group">
-                                <input class="footer__subtitle-star" type="radio" name="rating" value="one" aria-label="terrible" checked>
-                                <input class="footer__subtitle-star" type="radio" name="rating" value="two" aria-label="bearable">
-                                <input class="footer__subtitle-star" type="radio" name="rating" value="free" aria-label="normally">
-                                <input class="footer__subtitle-star" type="radio" name="rating" value="four" aria-label="fine">
-                                <input class="footer__subtitle-star" type="radio" name="rating" value="five" aria-label="wonderful">
+                            <div class="footer__subtitle-items">
+                                <input class="footer__subtitle-item" id="rating__star-five" type="radio" name="rating" value="five">
+                                <label class="footer__subtitle-label" for="rating__star-five"></label>
+                                <input class="footer__subtitle-item" id="rating__star-four" type="radio" name="rating" value="four">
+                                <label class="footer__subtitle-label" for="rating__star-four"></label>
+                                <input class="footer__subtitle-item" id="rating__star-free" type="radio" name="rating" value="free">
+                                <label class="footer__subtitle-label" for="rating__star-free"></label>
+                                <input class="footer__subtitle-item" id="rating__star-two" type="radio" name="rating" value="two">
+                                <label class="footer__subtitle-label" for="rating__star-two"></label>
+                                <input class="footer__subtitle-item" id="rating__star-one" type="radio" name="rating" value="one">
+                                <label class="footer__subtitle-label" for="rating__star-one"></label>
                             </div>
                         </div>
                     </li>
-                    <li class="footer__subtitle-item">
-                        <p class="footer__subtitle-signature">Copyright © 2018 Dlk • Design Life Kids</p>
+                    <li class="footer__subtitle-text">
+                        <p class="footer__subtitle-signature subtitle__signature-title">Copyright © 2018 Dlk • Design Life Kids</p>
                     </li>
-                    <li class="footer__subtitle-item">
-                        <a class="footer__subtitle-signature only" href="#"><p>Web Design — Direct Line Development</p></a>
+                    <li class="footer__subtitle-text">
+                        <a class="footer__subtitle-signature footer__subtitle-direct" href="#"><p>Web Design — Direct Line Development</p></a>
                     </li>
                 </ul>
             </section>

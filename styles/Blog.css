@@ -1,46 +1,49 @@
 
-
-
-
-
  /* хлебные крошки */
-.breadcrumps {
+.breadcrumbs {
     display: flex;
     flex-direction: column;
 }
 /* заголовок */
-.breadcrumps__title {
+.breadcrumbs__title {
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     margin:5px 0 0 0;
 }
-.breadcrumps__list {
+.breadcrumbs__list {
     display: flex;
     align-items: baseline;
     padding: 0;
-    max-width: 229px;
-    justify-content: flex-start;
-    margin: 15px 0 33px 1px;
+    max-width: 127px;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 32.5px;
 }
-.breadcrumps__list-item {
-    margin-right: 20px;
-}
-.breadcrumps__list-img {
-    margin-right: 5px;
+.breadcrumbs__list-item:not(:last-child)::after {
+    display: inline-block;
+    content: "";
+    border-top: 2px solid #1E0606;
+    border-right: 2px solid #1E0606;
+    transform: rotate(45deg);
+    width: 7px;
+    height: 7px;
+    margin:0 0 1px 14px;
 }
 /* текст */
-.breadcrumps__list-text {
+.breadcrumbs__list-text,
+.breadcrumbs__list-link {
     font-family: 'Crimson Text', sans-serif;
     font-style: italic;
-    font-size: 19.5px;
-    font-weight: 400;
+    font-size: 20px;
     line-height: 26px;
-    color: #1E0606;
+    color: #000;
 }
 
 /* прозрачность */
-.breadcrumps__list-blog {
+.breadcrumbs__list-text {
     opacity: 50%;
+    letter-spacing: 0.3px;
+    font-size: 19px;
 }
 
 /* содержимое */
@@ -66,19 +69,17 @@
     margin-top: 22px;
 
 }
-.blog__list-img:hover {
 
-}
 .blog__list_desc {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 24px;
     color: #1E0606;
-    margin-top: -8px;
+    margin-top: -7px;
     line-height: 31px;
 }
 .blog__list-title {
-    letter-spacing:0.22px;
+    letter-spacing:0.26px;
 }
 .blog__list_desc:hover {
     text-decoration:underline;
@@ -92,48 +93,96 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     line-height: 25px;
-    margin-top: 15px;
+    margin-top: 14.5px;
     margin-bottom: 35px;
 }
 
 
 /* переключатели */
-.blog__control {
+.blog__click {
     display: flex;
     justify-content: space-between;
     margin-top: 0;
     padding: 0;
-    margin: -5px 0px 55px 0px;
+    margin-bottom: 41px;
     align-items: center;
+    margin-top: -14px;
 }
-.blog__control-item {
-    display: inline;
+.blog__click-control {
+    position: relative;
+    display: inline-flex;
+    width: 37px;
+    height: 37px;
+    padding: 0;
+    margin-top: 20px;
+    margin-right: 5px;
 }
-.blog__control-number {
+.blog__click-btn {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    display: inline-flex;
+    padding: 0;
+}
+.blog__click-arrowLeft {
+    border-top: 4px solid #1E06061F;
+    border-left: 4px solid #1E06061F;
+    transform: rotate(-45deg);
+    margin: -4px 0 0 5px;
+}
+.blog__click-arrowRight {
+    border-top: 4px solid #1E06061F;
+    border-right: 4px solid #1E06061F;
+    transform: rotate(45deg);
+    margin: -4px 0 0 17px;
+}
+.blog__click-arrowLeft:hover,
+.blog__click-arrowRight:hover {
+    background-color: transparent;
+}
+.blog__click-arrowLeft:hover {
+    border-top: 4px solid #C29974;
+    border-left: 4px solid #C29974;
+    transform: rotate(-45deg);
+}
+.blog__click-arrowRight:hover {
+    border-top: 4px solid #C29974;
+    border-right: 4px solid #C29974;
+    transform: rotate(45deg);
+    margin-left: 16px;
+}
+.blog__click-arrowLeft:active,
+.blog__click-arrowRight:active {
+    background-color: transparent;
+    opacity: 0.7;
+}
+.blog__click-arrowLeft:active {
+    border-top: 4px solid #C29974;
+    border-left: 4px solid #C29974;
+    transform: rotate(-45deg);
+}
+
+.blog__click-arrowRight:active {
+    border-top: 4px solid #C29974;
+    border-right: 4px solid #C29974;
+    transform: rotate(45deg);
+    margin-left: 16px;
+}
+
+.blog__click-numbers {
+    display:flex;
+    justify-content: space-between;
     min-width: 234px;
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 16px;
-    padding: 0 30.7px;
-    margin-top: 1px;
+    cursor: pointer;
+    margin-bottom: 5px;
 }
-.blog__control-img {
-    margin: 0;
-}
-.blog__control-number:hover {
+.blog__click-number:hover {
     color:#AAAAAA ;
 }
-.blog__control-number {
-    color: #1E0606;
-}
-.blog__control-one {
+.blog__click-one {
     color: #C29974;
-}
-.blog__control-btn {
-    padding: 0;
-    background-color: transparent;
-}
-.blog__control-btn:hover {
-    padding: 0;
-    background-color: transparent;
 }

@@ -14,16 +14,16 @@
 </head>
 <body>
     <header class="header container">
-        <a class="header__logo" href="#">
+        <a class="header__logo" href="./index.html">
             <img class="header__logo-img" src="./images/Header/Union.png" alt="Logotype DLK" width="100" height="52">
         </a>
         <nav class="header__nav">
             <ul class="header__nav-list">
                 <li class="header__nav-item">
-                    <a class="header__nav-link" href="#">BLOG</a>
+                    <a class="header__nav-link" href="./pages/blog.html">BLOG</a>
                 </li>
                 <li class="header__nav-item">
-                    <a class="header__nav-link" href="#">CATALOG</a>
+                    <a class="header__nav-link" href="./pages/catalog.html">CATALOG</a>
                 </li>
                 <li class="header__nav-item">
                     <a class="header__nav-link" href="#">ABOUT US</a>
@@ -34,24 +34,22 @@
             <li class="header__list-item">
                 <div class="header__list-wrapper">
                     <form class="header__list-form">
-                        <button class="header__list-btn" type="submit">
-                            <img class="header__list-icon" src="./images/Header/XMLID.png" alt="magnifying glass">
-                        </button>
+                        <button class="header__list-btn" type="submit" aria-label="search"></button>
                     </form>
                 </div>
             </li>
-            <li class="header__list-item"><a class="header__list-link" href="#">CONTACT US</a></li>
+            <li class="header__list-item"><a class="header__list-link" href="./pages/contactUs.html">CONTACT US</a></li>
         </ul>
     </header>
-    <main class="main container"tabindex="0" >
+    <main class="main container" tabindex="0" >
         <section class="main__slider">
             <div class="main__slider-switch">
                 <p class="main__slider-number" aria-label="number 01">01</p>
                 <form class="main__slider-form" action="#">
-                    <button class="main__slider-switchBtn" type="submit"><img src="./images/Category/RectangleOne.png" alt="dash"></button>
-                    <button class="main__slider-switchBtn" type="submit"><img src="./images/main/Rectangle.png" alt="dash"></button>
-                    <button class="main__slider-switchBtn" type="submit"><img src="./images/main/Rectangle.png" alt="dash"></button>
-                    <button class="main__slider-switchBtn" type="submit"><img src="./images/main/Rectangle.png" alt="dash"></button>
+                    <button class="main__slider-switchBtn main__slider-activ" type="submit" aria-label="slider"></button>
+                    <button class="main__slider-switchBtn" type="submit" aria-label="slider"></button>
+                    <button class="main__slider-switchBtn" type="submit" aria-label="slider"></button>
+                    <button class="main__slider-switchBtn" type="submit" aria-label="slider"></button>
                 </form>
             </div>
             <ul class="main__slider-group">
@@ -68,28 +66,28 @@
         <ul class="services__list">
             <li class="services__list-item services__list-apparel">
                 <img class="services__list-sweater" src="./images/Category/sweater.jpg" alt="services__list-pic">
-                <a class="services__list-link services__list-link-apparel" href="#">APPAREL KIDS</a>
+                <a class="services__list-link services__list-link-apparel" href="./pages/toys.html">APPAREL KIDS</a>
             </li>
             <li class="services__list-item services__list-holyday">
                 <img class="services__list-img" src="./images/Category/Product-two.png" alt="services__list-pic">
-                <a class="services__list-link services__list-link-holyday" href="#">HOLIDAY SHOP</a>
+                <a class="services__list-link services__list-link-holyday" href="./pages/toys.html">HOLIDAY SHOP</a>
             </li>
             <li class="services__list-item services__list-toys">
                 <img class="services__list-img" src="./images/Category/Product_bkd-free.png" alt="services__list-pic">
-                <a class="services__list-link services__list-link-toys" href="#">TOYS</a>
+                <a class="services__list-link services__list-link-toys" href="./pages/toys.html">TOYS</a>
             </li>
             <li class="services__list-item services__list-accessories">
                 <img class="services__list-img" src="./images/Category/Product-four.png" alt="services__list-pic">
-                <a class="services__list-link services__list-link-accessories" href="#">ACCESSORIES</a>
+                <a class="services__list-link services__list-link-accessories" href="./pages/toys.html">ACCESSORIES</a>
             </li>
         </ul>
         <div class="services__div">
-            <button class="services__div-arrow">
-                <img class="services__div-img" src="./images/Category/Vector1.png" alt="arrow">
-            </button>
-            <button class="services__div-arrow">
-                <img class="services__div-img" src="./images/Category/Vector.png" alt="arrow">
-            </button>
+            <div class="services__div-arrow">
+                <button class="arrow-left" type="button" aria-label="arrow"></button>
+            </div>
+            <div class="services__div-arrow">
+                <button class="arrow-right" type="button" aria-label="arrow"></button>
+            </div>
             <p class="services__div-phrase" tabindex="0">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
         </div>
     </section>
@@ -100,13 +98,13 @@
                 <p class="page__list-title" tabindex="0">DELIVERY</p>
             </li>
             <li class="page__list-item">
-                <button class="page__list-button page__list-delivery">Delivery</button>
+                <a class="page__list-button page__list-delivery" href="#">Delivery</a>
             </li>
             <li class="page__list-item">
-                <button class="page__list-button page__list-guarantee">Guarantee</button>
+                <a class="page__list-button page__list-guarantee" href="#">Guarantee</a>
             </li>
             <li class="page__list-item">
-                <button class="page__list-button page__list-credit">Credit</button>
+                <a class="page__list-button page__list-credit" href="#">Credit</a>
             </li>
             <li class="page__list-item">
                 <p class="page__list-text" tabindex="0">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked thet four years have flown by. It's simply magical.</p>
@@ -147,7 +145,7 @@
         <div class="contacts__aside">
             <h2 class="contacts__aside-title" tabindex="0">CONTACTS</h2>
             <p class="contacts__aside-text" tabindex="0">Some days i feel like i've been working on dlk my entire life and there are other days thet i am completely shocked that four years have flown by. It's simply magical.</p>
-            <img class="contacts__aside-img" tabindex="0" tabindex="0" src="./images/contacts/map.png" alt="map">
+            <iframe class="contacts__aside-img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d593.1387954010022!2d49.28970300214455!3d53.5121410168064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x416879ed1ada6fbd%3A0x751234490b1ca980!2sDirect%20Line%20Digital!5e0!3m2!1sru!2sru!4v1683529731547!5m2!1sru!2sru" width="483" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>    
     <footer class="footer">
@@ -215,83 +213,85 @@
                     </li>
                     <li class="footer__info-icon">
                         <a class="footer__info-link" href="#">
-                            <img class="footer__info-img" src="./images/footer/Facebook.png" alt="Logotype Facebook">
+                            <img class="footer__info-img" src="./images/footer/facebook.svg" alt="Logotype Facebook">
                         </a>
                     </li>
                     <li class="footer__info-icon">
                         <a class="footer__info-link" href="#">
-                            <img class="footer__info-img" src="./images/footer/Twitter.png" alt="Logotype Twitter">
+                            <img class="footer__info-img" src="./images/footer/twitter.svg" alt="Logotype Twitter">
                         </a>
                     </li>
                     <li class="footer__info-icon">
                         <a class="footer__info-link" href="#">
-                            <img class="footer__info-img" src="./images/footer/Pinterest.png" alt="Logotype Pinterest">
+                            <img class="footer__info-img" src="./images/footer/pinterest.svg" alt="Logotype Pinterest">
                         </a>
                     </li>
                     <li class="footer__info-icon">
                         <a class="footer__info-link" href="#">
-                            <img class="footer__info-img" src="./images/footer/Instagram.png" alt="Logotype Instagram">
+                            <img class="footer__info-img" src="./images/footer/instagram.svg" alt="Logotype Instagram">
                         </a>
                     </li>
                 </ul>
             </section>
             <section class="footer__subtitle">
                 <ul class="footer__subtitle-list">
-                    <li class="footer__subtitle-item">
+                    <li class="footer__subtitle-wrapper">
+                        <p class="subtitle__signature" tabindex="0">Company Rating</p>
                         <div class="footer__subtitle-rating">
-                            <p class="footer__subtitle-ratingStar" tabindex="0">Company Rating</p>
-                            <div class="footer__subtitle-group">
-                                <input class="footer__subtitle-star" type="radio" name="rating" value="one" aria-label="terrible" checked>
-                                <input class="footer__subtitle-star" type="radio" name="rating" value="two" aria-label="bearable">
-                                <input class="footer__subtitle-star" type="radio" name="rating" value="free" aria-label="normally">
-                                <input class="footer__subtitle-star" type="radio" name="rating" value="four" aria-label="fine">
-                                <input class="footer__subtitle-star" type="radio" name="rating" value="five" aria-label="wonderful">
+                            <div class="footer__subtitle-items">
+                                <input class="footer__subtitle-item" id="rating__star-five" type="radio" name="rating" value="five">
+                                <label class="footer__subtitle-label" for="rating__star-five"></label>
+                                <input class="footer__subtitle-item" id="rating__star-four" type="radio" name="rating" value="four">
+                                <label class="footer__subtitle-label" for="rating__star-four"></label>
+                                <input class="footer__subtitle-item" id="rating__star-free" type="radio" name="rating" value="free">
+                                <label class="footer__subtitle-label" for="rating__star-free"></label>
+                                <input class="footer__subtitle-item" id="rating__star-two" type="radio" name="rating" value="two">
+                                <label class="footer__subtitle-label" for="rating__star-two"></label>
+                                <input class="footer__subtitle-item" id="rating__star-one" type="radio" name="rating" value="one">
+                                <label class="footer__subtitle-label" for="rating__star-one"></label>
                             </div>
                         </div>
                     </li>
-                    <li class="footer__subtitle-item">
-                        <p class="footer__subtitle-signature">Copyright © 2018 Dlk • Design Life Kids</p>
+                    <li class="footer__subtitle-text">
+                        <p class="footer__subtitle-signature subtitle__signature-title">Copyright © 2018 Dlk • Design Life Kids</p>
                     </li>
-                    <li class="footer__subtitle-item">
+                    <li class="footer__subtitle-text">
                         <a class="footer__subtitle-signature footer__subtitle-direct" href="#"><p>Web Design — Direct Line Development</p></a>
                     </li>
                 </ul>
             </section>
         </div>
     </footer>
-    <div class="form">
-        <form action="#" method="get" class="form__form">
-            <ul class="form__form-list">
-                <li class="form__form-item">
-                    <label class="form__form-label" for="name">Name:</label>
-                    <input type="text" name="name" class="form__form-input" id="name" required>
-                </li>
-                <li class="form__form-item">
-                    <label class="form__items-label" for="phone">Phone:</label>
-                    <input type="text" name="phone" class="form__items-input" id="phone" required>
-                </li>
-                <li class="form__form-item">
-                    <label class="form__items-label" for="mail">Email:</label>
-                    <input type="email" name="email" class="form__items-input" id="mail" required>
-                </li>
-                <li class="form__form-item">
-                    <label class="form__items-label" for="message">Message:</label>
-                    <input type="text" name="message" class="form__items-input" id="message" required>
-                </li>
-            </ul>
-            <ul class="form__list">
-                <li class="form__list-item">
-                    <img src="../images/Category/Vec.png" class="form__list-icon" alt="icon">
-                </li>
-                <li class="form__list-item">
-                    <img src="../images/Category/Rect.png" class="form__list-icon" alt="icon">
-                </li>
-                <li class="form__list-item">
-                    <p class="form__list-text">By clicking on the button, you consent to the processing of your personal data</p>
-                    <input type="submit" class="submit" value="SUBMIT">
-                </li>
-            </ul>
-        </form>
+    <div class="div">
+        <div class="div__form">
+            <form class="div__form-inner" action="#" method="post">
+                <div class="div__form-wrapper">
+                    <label class="div__form-label" for="name">Name</label>
+                    <input class="div__form-input" type="text" id="name">
+                </div>
+                <div class="div__form-wrapperTwo">
+                    <div class="div__form-wrap">
+                        <label class="div__form-label" for="phone">Phone</label>
+                        <input class="div__form-input" type="tel" id="phone">
+                    </div>
+                    <div class="div__form-wrap">
+                        <label class="div__form-label" for="mail">Email</label>
+                        <input class="div__form-input" type="email" id="mail">               
+                    </div>
+                </div>
+                <div class="div__form-wrapperFree">
+                    <label class="div__form-label" for="massage">Massage</label>
+                    <textarea class="div__form-textarea" id="massage" cols="61" rows="7"></textarea>
+                </div>
+                <div class="div__form-wrapperCheck">
+                    <label class="div__form-text">By clicking on the button, you consent to the processing of your personal data
+                        <input class="div__form-checkbox" type="checkbox">
+                        <span class="div__form-span"></span>
+                    </label>
+                </div>
+                <button class="div__form-btn" type="submit">SUBMIT</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>

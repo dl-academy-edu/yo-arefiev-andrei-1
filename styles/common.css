@@ -10,7 +10,6 @@
     clip-path: inset(100%);
 }
 button {
-    background-color: #000000;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     border: none;
@@ -33,23 +32,22 @@ a {text-decoration: none;}
 
 
 .container {
+    display: flex;
     max-width: 1180px;
     justify-content: center;
     margin: auto;
 }
 
-.container {
-    display: flex;
-    max-width: 1180px;
-    justify-content: center;
-}
 /* HEADER */
 .header {
     display: flex;
     align-items: center;
-    margin: 50px auto;
+    margin: 49px auto;
 }
+.header__logo-img {
+    margin-top: 1px;
 
+}
 .header__nav-list,
 .header__list,
 .header__list-form {
@@ -104,8 +102,10 @@ a {text-decoration: none;}
 /* иконка */
 .header__list-btn {
     border: none;
-    padding: 0;
-    background-color: #fff;
+    padding: 9px 9px 8px 8px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/Header/xmlid.svg);
     margin-top: 0.5px;
 }
 
@@ -187,7 +187,7 @@ a {text-decoration: none;}
 .footer__subtitle-list {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: flex-start;
     padding: 0;
     margin-top: 0px;
 }
@@ -206,7 +206,7 @@ a {text-decoration: none;}
 /* линейное построение + отступ логотипов */
 .footer__info-icon {
     display: inline-flex;
-    padding: 25px 2.6px;
+    padding: 25px 2.9px;
 }
 
 /* ПОИСКОВИК */
@@ -218,12 +218,17 @@ a {text-decoration: none;}
     background-color: #666666;
     border: none;
     color: #fff;
-    font-size: 16px;
+    font-size: 15.4px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 200;
-    line-height: 22px;
-    padding: 9px 17px 9px 16.5px;
+    letter-spacing: 0.8px;
+    padding: 9px 17px 9px 16px;
     width: 265px;
+}
+.footer__info-btn {
+    background-color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    padding: 11px 22.5px 10px 23px;
 }
 .footer__info-input :hover {
     padding: 1px 1px;
@@ -233,73 +238,68 @@ a {text-decoration: none;}
 .footer__info-form {
     display: flex;
 }
+.footer__subtitle-wrapper {
+    display: flex;
+    margin-right: 158px;
+}
+.subtitle__signature-title {
+    margin-right: 110px;
+}
+
+
 
 /* Звёздный Рейтинг */
 
 .footer__subtitle-rating {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 0;
-    border: none;
-}
-
-.footer__subtitle-group {
     position: relative;
-    width: 85px;
-    height: 16px;
-    margin-left: 10px;
-    background-image: url(../images/Category/Star.png);
-    background-size: 17px 16px;
+    font-size: 18px;
+    display: flex;
+    margin: 12px 0 0 27px;
+}
+.footer__subtitle-rating::before {
+    content: "★ ★ ★ ★ ★";
+    display: block;
 }
 
-.footer__subtitle-star {
+.footer__subtitle-items {
     position: absolute;
+    width: 105%;
+    height: 100%;
+    top: 0;
+    left: 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+.footer__subtitle-item {
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
     top: 0;
     left: 0;
-    margin: 0;
-    height: 16px;
-    margin-right: 5px;
-    background-size: 17px 16px;
-    font-size: inherit;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
 }
-.footer__subtitle-star:focus {
-    background-image:url(../images/Category/Star\ activ.png) ;
-    outline: none;
+
+.footer__subtitle-label {
+    flex-grow: 1;
+    height: 100%;
+    cursor: pointer;
+
 }
-.footer__subtitle-star:active,
-.footer__subtitle-star:hover {
-    background-image: url(../images/Category/Starone.svg);
+.footer__subtitle-label::before {
+    content: "★";
+    display: block;
 }
-.footer__subtitle-ratingStar:hover,
-.footer__subtitle-ratingStar:active,
-.footer__subtitle-ratingStar:focus {
-    color:#C29974 ;
+.subtitle__signature:hover,
+.footer__subtitle-item,
+.footer__subtitle-item:checked ~ .footer__subtitle-label {
+    color: #C29974;
 }
-.footer__subtitle-star:nth-of-type(1) {
-    z-index: 5;
-    width: 17px;
-}
-.footer__subtitle-star:nth-of-type(2) {
-    z-index: 4;
-    width: 34px;
-}
-.footer__subtitle-star:nth-of-type(3) {
-    z-index: 3;
-    width: 51px;
-}
-.footer__subtitle-star:nth-of-type(4) {
-    z-index: 2;
-    width: 68px;
-}
-.footer__subtitle-star:nth-of-type(5) {
-    z-index: 1;
-    width: 85px;
-}
-.footer__subtitle-ratingStar {
-    color: #fff;
+
+.footer__subtitle-label:hover,
+.footer__subtitle-label:hover ~ .footer__subtitle-label,
+.footer__subtitle-label:checked ~ .footer__subtitle-label:hover {
+    color: #836E5B;
 }
 

@@ -47,43 +47,48 @@ h2 {font-family:'Montserrat', sans-serif;}
 
 /* число 01 */
 .main__slider-number {
-    font-family: montserrat;
-    font-weight: 200;
+    font-family: 'Montserrat';
     font-size: 60px;
+    font-weight: 200;
     color: #1E06060D;
     margin: 0;
 }
 
 /* кнопки для слайда */
 .main__slider-switchBtn{
-    border:none;
-    margin: 12.5px 0 -1.3px 0;
+    border-bottom: 3px solid #D6CAC2;
+    margin: 12.5px 0 -1.3px 3px;
     background-color: #EEE4DB;
-    padding: 0 4px;
+    padding: 0 15px;
 }
-.main__slider-form:hover {
-    color: #725F5B;
+.main__slider-switchBtn:hover {
+    border-color: #725F5B;
+    background-color: transparent;
+}
+.main__slider-activ {
+    border-color: #725F5B;
 }
 
 
 .main__slider-group {
     flex-direction: column;
-    margin: 62px 16px;
+    margin: 64px 16px;
     padding: 0;
 }
       /* Заголовок */
 .main__slider-title {
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
-    font-style: normal;
     width: 370px;
+    line-height: 44px;
 }
       /* <p-> Designed in Slovenia */
 .main__slider-phrase {
     font-family: 'Crimson Text', sans-serif;
     font-style: italic;
     font-size: 20.2px;
-    margin: -10px auto;
+    letter-spacing: 0.07px;
+    margin: -9px auto;
 }
 
 .main__slider-btn,
@@ -96,7 +101,7 @@ h2 {font-family:'Montserrat', sans-serif;}
     font-size: 16px;
     background-color: #000000;
     color: #FFFFFF;
-    padding: 10px 22.5px;
+    padding: 10.5px 22px;
     border: none;
     margin: 31px 0 2px 0.5px;
 }
@@ -116,8 +121,8 @@ h2 {font-family:'Montserrat', sans-serif;}
     background-color: #C29974;
     color: #FFFFFF;
     font-size: 12px;
-    padding: 12px 0;
-    margin: 27px 0 0 0;
+    padding: 13px 0;
+    margin: 23px 0 0 0;
 }
 
 /* Категории (второй блок)*/
@@ -157,6 +162,12 @@ h2 {font-family:'Montserrat', sans-serif;}
     text-shadow: 0 0 40px #93030340;
     font-weight: 700;
 }
+.services__list-link:hover {
+    text-decoration:underline;
+}
+.services__list-link:active {
+    text-decoration:underline;
+}
 /* задний фон */
 .services__list-apparel {
     background-color: #DBE4DB;
@@ -184,16 +195,72 @@ h2 {font-family:'Montserrat', sans-serif;}
 /* нижние переключатели */
 .services__div {
     display: flex;
+    margin-top: -1px;
 }
+
 .services__div-arrow {
-    border: none;
-    background-color: #00000000;
-    padding:0 5px 2px 0;
-    margin: 9px 0 5px 1px;
-}
-.services__div-img {
-    padding: 3px 9px;
+    position: relative;
+    display: inline-flex;
+    width: 37px;
+    height: 37px;
+    padding: 0;
+    margin-top: 20px;
+    margin-right: 5px;
     background-color: #70BBDC33;
+}
+.arrow-left,
+.arrow-right {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    display: inline-flex;
+    padding: 0;
+    margin: 7px 0 0 13px;
+}
+.arrow-left {
+    border-top: 4px solid #1E0606;
+    border-left: 4px solid #1E0606;
+    transform: rotate(-45deg);
+
+}
+.arrow-right {
+    border-top: 4px solid #1E0606;
+    border-right: 4px solid #1E0606;
+    transform: rotate(45deg);
+    margin-left: 4px;
+}
+.arrow-left:hover,
+.arrow-right:hover {
+    background-color: transparent;
+}
+.arrow-left:hover {
+    border-top: 4px solid #C29974;
+    border-left: 4px solid #C29974;
+    transform: rotate(-45deg);
+}
+.arrow-right:hover {
+    border-top: 4px solid #C29974;
+    border-right: 4px solid #C29974;
+    transform: rotate(45deg);
+    margin-left: 4px;
+}
+.arrow-left:active,
+.arrow-right:active {
+    background-color: transparent;
+    opacity: 0.7;
+}
+.arrow-left:active {
+    border-top: 4px solid #C29974;
+    border-left: 4px solid #C29974;
+    transform: rotate(-45deg);
+}
+
+.arrow-right:active {
+    border-top: 4px solid #C29974;
+    border-right: 4px solid #C29974;
+    transform: rotate(45deg);
+    margin-left: 4px;
 }
 
 .services__div-phrase {
@@ -241,6 +308,8 @@ h2 {font-family:'Montserrat', sans-serif;}
     font-size: 25.7px;
     margin-top: 19px;
     line-height: 35px;
+    color: #1E0606;
+    font-weight: 400;
 }
 
 .page__list-delivery {
@@ -248,7 +317,7 @@ h2 {font-family:'Montserrat', sans-serif;}
     font-style: italic;
     font-size: 25.5px;
     background-color: #70BBDC33;
-    max-width: 326px;
+    max-width: 85px;
     font-weight: 700;
     padding: 10px 180px 10px 60px;
     margin: 8.5px 0 0 -60px;
@@ -265,6 +334,7 @@ h2 {font-family:'Montserrat', sans-serif;}
 .page__list-credit {
     font-size: 26px;
     margin-bottom: 22px;
+    letter-spacing: 0.2px;
 }
 .page__list-text {
     font-size: 16px;
@@ -283,7 +353,7 @@ h2 {font-family:'Montserrat', sans-serif;}
     display: inline;
     background-color: #000000;
     color: #FFFFFF;
-    padding: 10px 22px;
+    padding: 9px 22.5px;
 }
 .page__list-item-link {
     margin-top: 20.5px;
@@ -307,7 +377,7 @@ h2 {font-family:'Montserrat', sans-serif;}
 .contacts {
     display: flex;
     justify-content: space-around;
-    margin: 97px auto 152px;
+    margin: 97px auto 154px;
 }
  /* блоки */
 .contacts__aside,
@@ -341,11 +411,11 @@ h2 {font-family:'Montserrat', sans-serif;}
     line-height: 22px;
 }
 .contacts__promo {
-    padding-bottom: 40px;
+    padding-bottom: 38px;
     margin-right: 57px;
 }
 .contacts__aside {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
     margin-right: 38px;
 }
 /* ссылка */
@@ -354,11 +424,17 @@ h2 {font-family:'Montserrat', sans-serif;}
     font-size: 15px;
     background-color: #000000;
     color: #FFFFFF;
-    padding: 11px 22px;
+    padding: 10.5px 22px;
 }
 .contacts__promo-link {
     margin: 2px 0 0 1px;
 }
+.page__list-subtitle:hover {background-color:#C29974;}
+.page__list-subtitle:active {background-color:#CFAF91;}
+.page__list-subtitle:disabled {background-color:#C7C1C1;}
+.contacts__promo-subtitle:hover {background-color:#C29974;}
+.contacts__promo-subtitle:active {background-color:#CFAF91;}
+.contacts__promo-subtitle:disabled {background-color:#C7C1C1;}
 /* выравнивание содержимого */
 .contacts__promo-title {margin: -25px  0;}
 .contacts__aside-title {margin: -25px 0;}
@@ -372,4 +448,108 @@ h2 {font-family:'Montserrat', sans-serif;}
     margin: 46.5px 2.5px 30px 0;
     word-spacing: 0.2px;
 }
-.contacts__aside-img {margin:0 2px -180px 0;}
+.contacts__aside-img {margin:0 2px -181px 0;}
+
+
+/* ФОРМА */
+.div {
+    background-color: #7D97DACC;
+    display: flex;
+    justify-content: center;
+    margin-top: 17px;
+    opacity: 0.8;
+}
+.div__form {
+    display: flex;
+    background-color: #E5EAF8;
+    min-width: 680px;
+    margin: 113px auto;
+}
+.div__form-inner {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.div__form-label {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 14px;
+    margin-bottom: 1px;
+}
+
+.div__form-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 46px;
+}
+.div__form-wrapperTwo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 21px;
+}
+.div__form-wrap {
+    display: flex;
+    flex-direction: column;
+    min-width: 290px;
+}
+.div__form-input {
+    font-family: 'Open Sans';
+    font-size: 18px;
+    padding: 13.7px 20px;
+    border-color:#00000033;
+    border-width: 1px;
+    margin-top: 3.5px;
+}
+
+ /* Textarea */
+.div__form-textarea {
+    font-family: 'Open Sans';
+    font-size: 18px;
+    border-color:#00000033;
+    border-width: 1px;
+    resize: none;
+    margin-top: 3.5px;
+}
+.div__form-wrapperFree {
+    margin-top: 21px;
+}
+
+.div__form-wrapperCheck {
+    margin-top: 19.5px;
+}
+
+/* Чекбокс на соглашение */
+.div__form-text {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.div__form-checkbox {
+    position: absolute;
+    opacity: 0;
+}
+.div__form-span {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    height: 19px;
+    width: 19px;
+    background-image: url(../images/toys/checkbox.svg);
+}
+.div__form-checkbox:checked + .div__form-span {
+    background-image: url(../images/toys/checkboxActiv.svg);
+}
+/* кнопка */
+.div__form-btn {
+    background-color: #C1C1C1;
+    max-width: 106px;
+    margin: 20px 0 41px;
+}
