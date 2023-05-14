@@ -72,7 +72,7 @@ h2 {font-family:'Montserrat', sans-serif;}
 
 .main__slider-group {
     flex-direction: column;
-    margin: 64px 16px;
+    margin: 64px 17px;
     padding: 0;
 }
       /* Заголовок */
@@ -86,6 +86,7 @@ h2 {font-family:'Montserrat', sans-serif;}
 .main__slider-phrase {
     font-family: 'Crimson Text', sans-serif;
     font-style: italic;
+    font-weight: 400;
     font-size: 20.2px;
     letter-spacing: 0.07px;
     margin: -9px auto;
@@ -150,6 +151,7 @@ h2 {font-family:'Montserrat', sans-serif;}
     align-items: center;
     position: relative;
     min-width: 280px;
+    height: 270px;
 }
 
 .services__list-link {
@@ -185,12 +187,7 @@ h2 {font-family:'Montserrat', sans-serif;}
 .services__list-link-apparel {
     max-width: 200px;
 }
-.services__list-holyday {
-    padding: 13px 0;
-}
-.services__list-accessories {
-    padding: 10px 0;
-}
+
 
 /* нижние переключатели */
 .services__div {
@@ -364,6 +361,14 @@ h2 {font-family:'Montserrat', sans-serif;}
     display: flex;
     margin-top: 75px;
 }
+.social-title {
+    opacity: 0;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
 .social__list {
     display: flex;
     align-items: center;
@@ -407,7 +412,7 @@ h2 {font-family:'Montserrat', sans-serif;}
 .contacts__aside-text {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    max-width: 483px;
+    max-width: 471.2px;
     line-height: 22px;
 }
 .contacts__promo {
@@ -451,49 +456,80 @@ h2 {font-family:'Montserrat', sans-serif;}
 .contacts__aside-img {margin:0 2px -181px 0;}
 
 
-/* ФОРМА */
-.div {
-    background-color: #7D97DACC;
+/* Модальное окно */
+.modalWindow {
     display: flex;
+    position: relative;
     justify-content: center;
-    margin-top: 17px;
-    opacity: 0.8;
+    background-color: #7D97DACC;
+    margin-top: -3000px;
 }
-.div__form {
+.hidden {
+    display: none;
+}
+.modalWindow__form {
     display: flex;
+    position: relative;
     background-color: #E5EAF8;
     min-width: 680px;
     margin: 113px auto;
 }
-.div__form-inner {
+.modalWindow__closeBtn {
+    position: absolute;
+    background: transparent;
+    background-repeat: no-repeat;
+    background-image: url(../images/main/icon.svg);
+    right: -25px;
+    top: 0;
+    padding: 10px;
+}
+.modalWindow__closeBtn:hover {
+    position: absolute;
+    background: transparent;
+    background-repeat: no-repeat;
+    background-image: url(../images/main/iconActiv.svg);
+    right: -25px;
+    top: 0;
+    padding: 10px;
+}
+.modalWindow__closeBtn:active {
+    position: absolute;
+    background: transparent;
+    background-repeat: no-repeat;
+    background-image: url(../images/main/iconActiv.svg);
+    right: -25px;
+    top: 0;
+    padding: 10px;
+}
+.modalWindow__form-inner {
     max-width: 600px;
     display: flex;
     flex-direction: column;
     margin-left: 40px;
 }
 
-.div__form-label {
+.modalWindow__form-label {
     font-family: 'Open Sans',sans-serif;
     font-size: 14px;
     margin-bottom: 1px;
 }
 
-.div__form-wrapper {
+.modalWindow__form-wrapper {
     display: flex;
     flex-direction: column;
     margin-top: 46px;
 }
-.div__form-wrapperTwo {
+.modalWindow__form-wrapperTwo {
     display: flex;
     justify-content: space-between;
     margin-top: 21px;
 }
-.div__form-wrap {
+.modalWindow__form-wrap {
     display: flex;
     flex-direction: column;
     min-width: 290px;
 }
-.div__form-input {
+.modalWindow__form-input {
     font-family: 'Open Sans';
     font-size: 18px;
     padding: 13.7px 20px;
@@ -503,7 +539,7 @@ h2 {font-family:'Montserrat', sans-serif;}
 }
 
  /* Textarea */
-.div__form-textarea {
+.modalWindow__form-textarea {
     font-family: 'Open Sans';
     font-size: 18px;
     border-color:#00000033;
@@ -511,16 +547,16 @@ h2 {font-family:'Montserrat', sans-serif;}
     resize: none;
     margin-top: 3.5px;
 }
-.div__form-wrapperFree {
+.modalWindow__form-wrapperFree {
     margin-top: 21px;
 }
 
-.div__form-wrapperCheck {
+.modalWindow__form-wrapperCheck {
     margin-top: 19.5px;
 }
 
 /* Чекбокс на соглашение */
-.div__form-text {
+.modalWindow__form-text {
     display: block;
     position: relative;
     padding-left: 35px;
@@ -532,11 +568,11 @@ h2 {font-family:'Montserrat', sans-serif;}
     -ms-user-select: none;
     user-select: none;
 }
-.div__form-checkbox {
+.modalWindow__form-checkbox {
     position: absolute;
     opacity: 0;
 }
-.div__form-span {
+.modalWindow__form-span {
     position: absolute;
     top: -3px;
     left: 0;
@@ -544,11 +580,11 @@ h2 {font-family:'Montserrat', sans-serif;}
     width: 19px;
     background-image: url(../images/toys/checkbox.svg);
 }
-.div__form-checkbox:checked + .div__form-span {
+.modalWindow__form-checkbox:checked + .modalWindow__form-span {
     background-image: url(../images/toys/checkboxActiv.svg);
 }
 /* кнопка */
-.div__form-btn {
+.modalWindow__form-btn {
     background-color: #C1C1C1;
     max-width: 106px;
     margin: 20px 0 41px;

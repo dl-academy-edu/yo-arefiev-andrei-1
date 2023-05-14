@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
     <header class="header container">
@@ -23,7 +21,7 @@
                     <a class="header__nav-link" href="./pages/blog.html">BLOG</a>
                 </li>
                 <li class="header__nav-item">
-                    <a class="header__nav-link" href="./pages/catalog.html">CATALOG</a>
+                    <a class="header__nav-link header__nav-text" href="./pages/catalog.html">CATALOG</a>
                 </li>
                 <li class="header__nav-item">
                     <a class="header__nav-link" href="#">ABOUT US</a>
@@ -38,13 +36,13 @@
                     </form>
                 </div>
             </li>
-            <li class="header__list-item"><a class="header__list-link" href="./pages/contactUs.html">CONTACT US</a></li>
+            <li class="header__list-item"><a class="header__list-link header__list-text" href="./pages/contactUs.html">CONTACT US</a></li>
         </ul>
     </header>
     <main class="main container" tabindex="0" >
         <section class="main__slider">
             <div class="main__slider-switch">
-                <p class="main__slider-number" aria-label="number 01">01</p>
+                <p class="main__slider-number">01</p>
                 <form class="main__slider-form" action="#">
                     <button class="main__slider-switchBtn main__slider-activ" type="submit" aria-label="slider"></button>
                     <button class="main__slider-switchBtn" type="submit" aria-label="slider"></button>
@@ -52,12 +50,12 @@
                     <button class="main__slider-switchBtn" type="submit" aria-label="slider"></button>
                 </form>
             </div>
-            <ul class="main__slider-group">
-                <li class="main__slider-text"><h1 class="main__slider-title" tabindex="0">THE OOH NOO COLLECTION</h1></li>
-                <li class="main__slider-text"><p class="main__slider-phrase" tabindex="0">Designed in Slovenia</p></li>
-                <li class="main__slider-text"><button class="main__slider-btn">EXPLORE NOW</button></li>
-            </ul>
-            <img class="main__slider-img" tabindex="0" src="./images/main/banner_img.png" alt="monster">
+            <div class="main__slider-group">
+                <h1 class="main__slider-title" tabindex="0">THE OOH NOO COLLECTION</h1>
+                <p class="main__slider-phrase" tabindex="0">Designed in Slovenia</p>
+                <button class="main__slider-btn main__slider-btn_js">EXPLORE NOW</button>
+            </div>
+            <img class="main__slider-img" src="./images/main/banner_img.png" alt="monster">
         </section>
         <h2 class="main__slider-offer" tabindex="0">FREE (CONTINENTAL) USA SHIPPING ON ALL ORDERS OF $100 USD OR MORE!</h2>
     </main>
@@ -120,6 +118,7 @@
         </ul>
     </section>
     <section class="social container">
+        <h2 class="social-title">Logotipe</h2>
         <ul class="social__list">
             <li class="social__list-item">
                 <img class="social__list-img" tabindex="0" src="./images/logo/mail.png" alt="square">
@@ -149,149 +148,141 @@
         </div>
     </section>    
     <footer class="footer">
-        <div class="container block">
-            <section class="footer__title">
-                <ul class="footer__title-listfooter">
-                    <li class="footer__title-item">
-                        <p class="footer__title-text" tabindex="0">Navigation</p>
-                    </li>
-                    <li class="footer__title-item">
-                        <p class="footer__title-text" tabindex="0">Customer Information</p>
-                    </li>
-                    <li class="footer__title-item">
-                        <p class="footer__title-text" tabindex="0">Connect</p>
-                    </li>
-                </ul>
-            </section>
-            <section class="footer__info">
-                <ul class="footer__info-list">
-                    <li class="footer__info-item text">
-                        <a class="footer__info-link" href="#">About Us</a>
-                    </li>
-                    <li class="footer__info-item text">
-                        <a class="footer__info-link" href="#">Blog</a>
-                    </li>
-                    <li class="footer__info-item text">
-                        <a class="footer__info-link" href="#">Design Services</a>
-                    </li>
-                    <li class="footer__info-item text">
-                        <a class="footer__info-link" href="#">Featured On</a>
-                    </li>
-                    <li class="footer__info-item text">
-                        <a class="footer__info-link" href="#">2018 Holiday Catalog</a>
-                    </li>
-                    <li class="footer__info-item text">
-                        <a class="footer__info-link" href="#">Shop By Designer</a>
-                    </li>
-                </ul>
-                <ul class="footer__info-aside">   
-                    <li class="footer__info-item text">
-                        <a class="footer__info-link" href="#">Contact Us</a>
-                    </li>
-                    <li class="footer__info-item text">
-                        <a class="footer__info-link" href="#">Sale Exclusions</a>
-                    </li>
-                    <li class="footer__info-item text">
-                        <a class="footer__info-link" href="#">Shipping & Returns</a>
-                    </li>
-                    <li class="footer__info-item text">
-                        <a class="footer__info-link" href="#">Terms & Conditions</a>
-                    </li>
-                    <li class="footer__info-item text">
-                        <a class="footer__info-link" href="#">Privacy Policy</a>
-                    </li>
-                    <li class="footer__info-item text">
-                        <a class="footer__info-link" href="#">Search</a>
-                    </li>
-                </ul>
-                <ul class="footer__info-logo">
-                    <li class="footer__info-email">
-                        <form class="footer__info-form">
-                            <input class="footer__info-input" aria-label="0" type="email" name="Email" value="Email" required>
-                            <button class="footer__info-btn" tabindex="0" type="submit">JOIN</button>
-                        </form>
-                    </li>
-                    <li class="footer__info-icon">
-                        <a class="footer__info-link" href="#">
-                            <img class="footer__info-img" src="./images/footer/facebook.svg" alt="Logotype Facebook">
-                        </a>
-                    </li>
-                    <li class="footer__info-icon">
-                        <a class="footer__info-link" href="#">
-                            <img class="footer__info-img" src="./images/footer/twitter.svg" alt="Logotype Twitter">
-                        </a>
-                    </li>
-                    <li class="footer__info-icon">
-                        <a class="footer__info-link" href="#">
-                            <img class="footer__info-img" src="./images/footer/pinterest.svg" alt="Logotype Pinterest">
-                        </a>
-                    </li>
-                    <li class="footer__info-icon">
-                        <a class="footer__info-link" href="#">
-                            <img class="footer__info-img" src="./images/footer/instagram.svg" alt="Logotype Instagram">
-                        </a>
-                    </li>
-                </ul>
-            </section>
-            <section class="footer__subtitle">
-                <ul class="footer__subtitle-list">
-                    <li class="footer__subtitle-wrapper">
-                        <p class="subtitle__signature" tabindex="0">Company Rating</p>
-                        <div class="footer__subtitle-rating">
-                            <div class="footer__subtitle-items">
-                                <input class="footer__subtitle-item" id="rating__star-five" type="radio" name="rating" value="five">
-                                <label class="footer__subtitle-label" for="rating__star-five"></label>
-                                <input class="footer__subtitle-item" id="rating__star-four" type="radio" name="rating" value="four">
-                                <label class="footer__subtitle-label" for="rating__star-four"></label>
-                                <input class="footer__subtitle-item" id="rating__star-free" type="radio" name="rating" value="free">
-                                <label class="footer__subtitle-label" for="rating__star-free"></label>
-                                <input class="footer__subtitle-item" id="rating__star-two" type="radio" name="rating" value="two">
-                                <label class="footer__subtitle-label" for="rating__star-two"></label>
-                                <input class="footer__subtitle-item" id="rating__star-one" type="radio" name="rating" value="one">
-                                <label class="footer__subtitle-label" for="rating__star-one"></label>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="footer__subtitle-text">
-                        <p class="footer__subtitle-signature subtitle__signature-title">Copyright © 2018 Dlk • Design Life Kids</p>
-                    </li>
-                    <li class="footer__subtitle-text">
-                        <a class="footer__subtitle-signature footer__subtitle-direct" href="#"><p>Web Design — Direct Line Development</p></a>
-                    </li>
-                </ul>
-            </section>
-        </div>
+        <section class="footer__section container">
+            <h2 class="footer__subtitle-title">subtitle</h2>
+            <ul class="footer__section-items">
+                <li>
+                    <p class="footer__section-title" tabindex="0">Navigation</p>
+                </li>
+                <li class="footer__section-item footer__section-text">
+                    <a class="footer__section-link" href="#">About Us</a>
+                </li>
+                <li class="footer__section-item footer__section-text">
+                    <a class="footer__section-link" href="#">Blog</a>
+                </li>
+                <li class="footer__section-item footer__section-text">
+                    <a class="footer__section-link" href="#">Design Services</a>
+                </li>
+                <li class="footer__section-item footer__section-text">
+                    <a class="footer__section-link" href="#">Featured On</a>
+                </li>
+                <li class="footer__section-item footer__section-text">
+                    <a class="footer__section-link" href="#">2018 Holiday Catalog</a>
+                </li>
+                <li class="footer__section-item footer__section-text">
+                    <a class="footer__section-link" href="#">Shop By Designer</a>
+                </li>
+            </ul>
+            <ul class="footer__section-aside">
+                <li>
+                    <p class="footer__section-title" tabindex="0">Customer Information</p>
+                </li>   
+                <li class="footer__section-item">
+                    <a class="footer__section-link" href="#">Contact Us</a>
+                </li>
+                <li class="footer__section-item">
+                    <a class="footer__section-link" href="#">Sale Exclusions</a>
+                </li>
+                <li class="footer__section-item">
+                    <a class="footer__section-link" href="#">Shipping & Returns</a>
+                </li>
+                <li class="footer__section-item">
+                    <a class="footer__section-link" href="#">Terms & Conditions</a>
+                </li>
+                <li class="footer__section-item">
+                    <a class="footer__section-link" href="#">Privacy Policy</a>
+                </li>
+                <li class="footer__section-item">
+                    <a class="footer__section-link" href="#">Search</a>
+                </li>
+            </ul>
+            <div class="footer__section-div">
+                <p class="footer__section-title" tabindex="0">Connect</p>
+                <div>
+                    <form class="footer__section-form">
+                        <input class="footer__section-input" aria-label="0" type="email" name="Email" value="Email" required>
+                        <button class="footer__section-btn" tabindex="0" type="submit">JOIN</button>
+                    </form>
+                    <ul class="footer__section-logo">
+                        <li class="footer__section-icon">
+                            <a class="footer__section-link" href="#">
+                                <img class="footer__section-img" src="./images/footer/facebook.svg" alt="Logotype Facebook">
+                            </a>
+                        </li>
+                        <li class="footer__section-icon">
+                            <a class="footer__section-link" href="#">
+                                <img class="footer__section-img" src="./images/footer/twitter.svg" alt="Logotype Twitter">
+                            </a>
+                        </li>
+                        <li class="footer__section-icon">
+                            <a class="footer__section-link" href="#">
+                                <img class="footer__section-img" src="./images/footer/pinterest.svg" alt="Logotype Pinterest">
+                            </a>
+                        </li>
+                        <li class="footer__section-icon">
+                            <a class="footer__section-link" href="#">
+                                <img class="footer__section-img" src="./images/footer/instagram.svg" alt="Logotype Instagram">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>     
+        <section class="footer__subtitle container">
+            <h2 class="footer__subtitle-title">subtitle</h2>
+            <div class="footer__subtitle-wrapper">
+                <p class="footer__subtitle-signature" tabindex="0">Company Rating</p>
+                <div class="footer__subtitle-rating">
+                    <div class="footer__subtitle-items">
+                        <input class="footer__subtitle-item" id="rating__star-five" type="radio" name="rating" value="five">
+                        <label class="footer__subtitle-label" for="rating__star-five"></label>
+                        <input class="footer__subtitle-item" id="rating__star-four" type="radio" name="rating" value="four">
+                        <label class="footer__subtitle-label" for="rating__star-four"></label>
+                        <input class="footer__subtitle-item" id="rating__star-free" type="radio" name="rating" value="free">
+                        <label class="footer__subtitle-label" for="rating__star-free"></label>
+                        <input class="footer__subtitle-item" id="rating__star-two" type="radio" name="rating" value="two">
+                        <label class="footer__subtitle-label" for="rating__star-two"></label>
+                        <input class="footer__subtitle-item" id="rating__star-one" type="radio" name="rating" value="one">
+                        <label class="footer__subtitle-label" for="rating__star-one"></label>
+                    </div>
+                </div>
+            </div>
+            <p class="footer__subtitle-signature subtitle__signature-title">Copyright © 2018 Dlk • Design Life Kids</p>
+            <a class="footer__subtitle-signature footer__subtitle-direct" href="#"><p>Web Design — Direct Line Development</p></a>
+        </section>
     </footer>
-    <div class="div">
-        <div class="div__form">
-            <form class="div__form-inner" action="#" method="post">
-                <div class="div__form-wrapper">
-                    <label class="div__form-label" for="name">Name</label>
-                    <input class="div__form-input" type="text" id="name">
+    <div class="modalWindow modalWindow_js hidden">
+        <div class="modalWindow__form">
+            <button class="modalWindow__closeBtn modalWindow__closeBtn_js"></button>
+            <form class="modalWindow__form-inner" action="#" method="post">
+                <div class="modalWindow__form-wrapper">
+                    <label class="modalWindow__form-label" for="name">Name</label>
+                    <input class="modalWindow__form-input" type="text" id="name">
                 </div>
-                <div class="div__form-wrapperTwo">
-                    <div class="div__form-wrap">
-                        <label class="div__form-label" for="phone">Phone</label>
-                        <input class="div__form-input" type="tel" id="phone">
+                <div class="modalWindow__form-wrapperTwo">
+                    <div class="modalWindow__form-wrap">
+                        <label class="modalWindow__form-label" for="phone">Phone</label>
+                        <input class="modalWindow__form-input" type="tel" id="phone">
                     </div>
-                    <div class="div__form-wrap">
-                        <label class="div__form-label" for="mail">Email</label>
-                        <input class="div__form-input" type="email" id="mail">               
+                    <div class="modalWindow__form-wrap">
+                        <label class="modalWindow__form-label" for="mail">Email</label>
+                        <input class="modalWindow__form-input" type="email" id="mail">               
                     </div>
                 </div>
-                <div class="div__form-wrapperFree">
-                    <label class="div__form-label" for="massage">Massage</label>
-                    <textarea class="div__form-textarea" id="massage" cols="61" rows="7"></textarea>
+                <div class="modalWindow__form-wrapperFree">
+                    <label class="modalWindow__form-label" for="massage">Massage</label>
+                    <textarea class="modalWindow__form-textarea" id="massage" cols="61" rows="7"></textarea>
                 </div>
-                <div class="div__form-wrapperCheck">
-                    <label class="div__form-text">By clicking on the button, you consent to the processing of your personal data
-                        <input class="div__form-checkbox" type="checkbox">
-                        <span class="div__form-span"></span>
+                <div class="modalWindow__form-wrapperCheck">
+                    <label class="modalWindow__form-text">By clicking on the button, you consent to the processing of your personal data
+                        <input class="modalWindow__form-checkbox" type="checkbox">
+                        <span class="modalWindow__form-span"></span>
                     </label>
                 </div>
-                <button class="div__form-btn" type="submit">SUBMIT</button>
+                <button class="modalWindow__form-btn" type="submit">SUBMIT</button>
             </form>
         </div>
     </div>
-</body>
+    <script src="./index.js"></script>
+</body> 
 </html>
