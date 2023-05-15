@@ -27,7 +27,7 @@ button:disabled {background-color:#C7C1C1;}
     max-width: 229px;
     justify-content: space-between;
     margin-top: 15px;
-    margin-bottom: 48.8px;
+    margin-bottom: 50px;
 }
 .breadcrumbs__list-item:not(:last-child)::after {
     display: inline-block;
@@ -70,46 +70,33 @@ button:disabled {background-color:#C7C1C1;}
 .div__form-text {font-weight: 700;}
 
     /* ползунок */
-.div__form-slider {
-    position: relative;
-    width: 190px;
+input[type="range"] {
+    -webkit-appearance: none;
+    margin-left: 5px;
+    margin-top: 21px;
+    width: 188px;
     height: 4px;
-    margin: 22px 0 18px 4px;
+    background: rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(#C29974, #C29974);
+    background-size: 25% 100%;
+    background-repeat: no-repeat;
+}      
+input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
-    appearance: none;
-    background: #000;
-    outline: none;
-    border-radius: none;
-}
-.div__form-slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    margin-top: -10px;
-    width: 24px;
     height: 24px;
+    width: 24px;
     border-radius: 12px;
     background: #fff;
-    border: 9px solid #C29974;
-}
-.div__form-slider:hover::-webkit-slider-thumb {
+    border:  8.5px solid #C29974;
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+}   
+
+input[type=range]::-webkit-slider-runnable-track  {
     -webkit-appearance: none;
-    appearance: none;
-    width: 24px;
-    height: 24px;
-    border-radius: 12px;
-    background: #fff;
-    border: 9px solid #C29974;
-    margin-top: -10px;
-}
-input[type=range].div__form-slider::-webkit-slider-runnable-track {
-    height: 4px;
-    border: none;
-    border-radius: 0;
-    background: #000;
     box-shadow: none;
-}
-input[type=range].div__form-slider.slider-progress::-webkit-slider-runnable-track {
-    background: linear-gradient(#C29974,#C29974) 0/var(--sx) 100% no-repeat, #000;
+    border: none;
+    background: transparent;
 }
 
 .div__form-numbers {
@@ -117,6 +104,7 @@ input[type=range].div__form-slider.slider-progress::-webkit-slider-runnable-trac
     justify-content: space-between;
     min-width: 207px;
     margin-right: 95px;
+    margin-top: 15px;
 }
 
 
@@ -219,10 +207,12 @@ input[type=range].div__form-slider.slider-progress::-webkit-slider-runnable-trac
  /* Кнопка */
 .div__form-pic {
     background-color: #000;
+    padding: 10.5px 22.5px;
 }
 .div__form-btn {
     margin-top: 51px;
     margin-left: -10px;
+    
 }
 /* содержимое */
 .cards {
