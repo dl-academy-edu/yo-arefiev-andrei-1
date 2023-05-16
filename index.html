@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DLK</title>
-    <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="stylesheet" href="./styles/common.css">
-    <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/normalize.min.css">
+    <link rel="stylesheet" href="./styles/common.min.css">
+    <link rel="stylesheet" href="./styles/index.min.css">
+    <link rel="stylesheet" href="./styles/style.min.css">
 </head>
 <body>
     <header class="header container">
@@ -63,19 +63,19 @@
         <h2 class="services__title" tabindex="0">CATEGORY PRODUCTS</h2> 
         <ul class="services__list">
             <li class="services__list-item services__list-apparel">
-                <img class="services__list-sweater" src="./images/Category/sweater.jpg" alt="services__list-pic">
+                <img class="services__list-sweater" src="./images/Category/sweater.jpg" alt="services__list-pic" width="244" height="177">
                 <a class="services__list-link services__list-link-apparel" href="./pages/toys.html">APPAREL KIDS</a>
             </li>
             <li class="services__list-item services__list-holyday">
-                <img class="services__list-img" src="./images/Category/Product-two.png" alt="services__list-pic">
+                <img class="services__list-img" src="./images/Category/Product-two.png" alt="services__list-pic" width="208" height="244">
                 <a class="services__list-link services__list-link-holyday" href="./pages/toys.html">HOLIDAY SHOP</a>
             </li>
             <li class="services__list-item services__list-toys">
-                <img class="services__list-img" src="./images/Category/Product_bkd-free.png" alt="services__list-pic">
+                <img class="services__list-img" src="./images/Category/Product_bkd-free.png" alt="services__list-pic" width="270" height="270">
                 <a class="services__list-link services__list-link-toys" href="./pages/toys.html">TOYS</a>
             </li>
             <li class="services__list-item services__list-accessories">
-                <img class="services__list-img" src="./images/Category/Product-four.png" alt="services__list-pic">
+                <img class="services__list-img" src="./images/Category/Product-four.png" alt="services__list-pic" width="240" height="250">
                 <a class="services__list-link services__list-link-accessories" href="./pages/toys.html">ACCESSORIES</a>
             </li>
         </ul>
@@ -91,31 +91,25 @@
     </section>
     <section class="page container">
         <img class="page__img" tabindex="0" src="./images/delivery/girl.png" alt="Girl">
-        <ul class="page__list">
-            <li class="page__list-item">
-                <p class="page__list-title" tabindex="0">DELIVERY</p>
-            </li>
-            <li class="page__list-item">
-                <a class="page__list-button page__list-delivery" href="#">Delivery</a>
-            </li>
-            <li class="page__list-item">
-                <a class="page__list-button page__list-guarantee" href="#">Guarantee</a>
-            </li>
-            <li class="page__list-item">
-                <a class="page__list-button page__list-credit" href="#">Credit</a>
-            </li>
-            <li class="page__list-item">
-                <p class="page__list-text" tabindex="0">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked thet four years have flown by. It's simply magical.</p>
-            </li>
-            <li class="page__list-item">
-                <p class="page__list-text page__list-two" tabindex="0">What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with  to thank!</p>
-            </li>
-            <li class="page__list-item-link">
-                <a class="page__list-link" href="#">
-                    <h3 class="page__list-subtitle">LEARN MORE</h3>
-                </a>
-            </li>
-        </ul>
+        <div class="page__text">
+            <p class="page__text-title" tabindex="0">DELIVERY</p>
+            <div class="page__text-tab">
+                    <button class="page__text-button page__text-delivery" >Delivery</button>
+                    <button class="page__text-button page__text-guarantee">Guarantee</button>
+                    <button class="page__text-button page__text-credit">Credit</button>
+            </div>
+            <ul class="page__text-list">    
+                <li class="page__text-item">
+                    <p class="page__text-aside" tabindex="0">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked thet four years have flown by. It's simply magical.</p>
+                </li>
+                <li class="page__text-item">
+                    <p class="page__text-aside page__text-two" tabindex="0">What started as an outlet to deal  with the traumatic loss of my husband, dlk has now become a truly happy place for me and i have you and all of the beautiful designers that we work with  to thank!</p>
+                </li>
+            </ul>    
+            <a class="page__text-link" href="#">
+                <h3 class="page__text-subtitle">LEARN MORE</h3>
+            </a>
+        </div>            
     </section>
     <section class="social container">
         <h2 class="social-title">Logotipe</h2>
@@ -206,22 +200,22 @@
                     <ul class="footer__section-logo">
                         <li class="footer__section-icon">
                             <a class="footer__section-link" href="#">
-                                <img class="footer__section-img" src="./images/footer/facebook.svg" alt="Logotype Facebook">
+                                <img class="footer__section-img" src="./images/footer/facebook.svg" alt="Logotype Facebook" width="30" height="30">
                             </a>
                         </li>
                         <li class="footer__section-icon">
                             <a class="footer__section-link" href="#">
-                                <img class="footer__section-img" src="./images/footer/twitter.svg" alt="Logotype Twitter">
+                                <img class="footer__section-img" src="./images/footer/twitter.svg" alt="Logotype Twitter" width="30" height="30">
                             </a>
                         </li>
                         <li class="footer__section-icon">
                             <a class="footer__section-link" href="#">
-                                <img class="footer__section-img" src="./images/footer/pinterest.svg" alt="Logotype Pinterest">
+                                <img class="footer__section-img" src="./images/footer/pinterest.svg" alt="Logotype Pinterest" width="30" height="30">
                             </a>
                         </li>
                         <li class="footer__section-icon">
                             <a class="footer__section-link" href="#">
-                                <img class="footer__section-img" src="./images/footer/instagram.svg" alt="Logotype Instagram">
+                                <img class="footer__section-img" src="./images/footer/instagram.svg" alt="Logotype Instagram" width="30" height="30">
                             </a>
                         </li>
                     </ul>
@@ -284,6 +278,6 @@
             </form>
         </div>
     </div>
-    <script src="./index.js"></script>
+    <script src="./script/index.min.js"></script>
 </body> 
 </html>

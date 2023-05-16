@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toys</title>
-    <link rel="stylesheet" href="../styles/normalize.css">
-    <link rel="stylesheet" href="../styles/common.css">
-    <link rel="stylesheet" href="../styles/toys.css">
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/normalize.min.css">
+    <link rel="stylesheet" href="../styles/common.min.css">
+    <link rel="stylesheet" href="..//styles/toys.min.css">
+    <link rel="stylesheet" href="../styles/style.min.css">
     <header class="header container">
         <a class="header__logo" href="../index.html">
             <img class="header__logo-img" src="../images/Header/Union.png" alt="Logotype DLK" width="100" height="52">
@@ -57,8 +57,8 @@
                 <p class="div__form-text" tabindex="0">Cost</p>
                 <input class="div__form-slider" aria-label="link to slider" type="range" name="cost" min="0" max="500" value="105">
                 <div class="div__form-numbers" tabindex="0">
-                    <label>0</label>
-                    <label>500</label>
+                    <label class="div__form-number">0</label>
+                    <label class="div__form-number">500</label>
                 </div>    
             </div>
             <div class="div__form-row">
@@ -93,17 +93,20 @@
             </div>
             <div class="div__form-wrap">
                 <p class="div__form-text" tabindex="0">Amount</p> 
-                <ul class="div__form-list">
-                    <li class="div__form-item" tabindex="0">
-                        <input class="div__form-button div__form-activ" type="button" value="0-5">    
-                    </li>
-                    <li class="div__form-item" tabindex="0">
-                        <input class="div__form-button" type="button" value="10-20">
-                    </li>
-                    <li class="div__form-item" tabindex="0">
-                        <input class="div__form-button" type="button" value="20-50">
-                    </li>
-                </ul>
+                <div class="div__form-group">
+                    <div class="div__form-item">
+                        <input class="div__form-input" id="radio-one" type="radio" name="radio" value="one" checked>
+                        <label class="div__form-desc" for="radio-one">0-5</label>
+                    </div>
+                    <div class="div__form-item">
+                        <input class="div__form-input" id="radio-two" type="radio" name="radio" value="two">
+                        <label class="div__form-desc" for="radio-two">10-20</label>
+                    </div>
+                    <div class="div__form-item">
+                        <input class="div__form-input" id="radiof-ree" type="radio" name="radio" value="free">
+                        <label class="div__form-desc" for="radiof-ree">20-50</label>
+                    </div>
+                </div>
             </div>
             <div class="div__form-btn">
                 <button tabindex="0" class="div__form-pic">APPLY</button>
@@ -113,37 +116,37 @@
     <section class="cards container">
         <ul class="cards__list">
             <li class="cards__list-item" tabindex="0">
-                <img class="cards__list-img" src="../images/Category/shark.png" alt="cards__list-pic">
+                <img class="cards__list-img" src="../images/Category/shark.png" alt="cards__list-pic" width="380" height="385">
                 <a class="cards__list-link" href="#">LEARN MORE</a>                
                 <p class="cards__list-text" tabindex="0">SHARKY BEAN BAG CHAIR COVER</p>
                 <h2 class="cards__list-subtitle" tabindex="0">$60.00 USD</h2>
             </li>
             <li class="cards__list-item" tabindex="0">                
-                <img class="cards__list-img" src="../images/Category/brass.png" alt="cards__list-pic">
+                <img class="cards__list-img" src="../images/Category/brass.png" alt="cards__list-pic" width="380" height="385">
                 <a class="cards__list-link" href="#">LEARN MORE</a>                
                 <p class="cards__list-text" tabindex="0">BRASS DECO FRAMES</p>
                 <h2 class="cards__list-subtitle" tabindex="0">$66.00 USD</h2>
             </li>
             <li class="cards__list-item" tabindex="0">                
-                <img class="cards__list-img" src="../images/Category/cibo.png" alt="cards__list-pic">
+                <img class="cards__list-img" src="../images/Category/cibo.png" alt="cards__list-pic" width="380" height="385">
                 <a class="cards__list-link" href="#">LEARN MORE</a>               
                 <p class="cards__list-text" tabindex="0">CIBO FULL APRON</p>
                 <h2 class="cards__list-subtitle" tabindex="0">$60.00 USD</h2>
             </li>
             <li class="cards__list-item" tabindex="0">               
-                <img class="cards__list-img" src="../images/Category/gatcha.png" alt="cards__list-pic">
+                <img class="cards__list-img" src="../images/Category/gatcha.png" alt="cards__list-pic" width="380" height="385">
                 <a class="cards__list-link" href="#">LEARN MORE</a>                
                 <p class="cards__list-text" tabindex="0">GATCHA GATCHA GUMBALL MACHINE</p>
                 <h2 class="cards__list-subtitle" tabindex="0">$56.00 USD</h2>
             </li>
             <li class="cards__list-item" tabindex="0">                
-                <img class="cards__list-img" src="../images/Category/advent.png" alt="cards__list-pic">
+                <img class="cards__list-img" src="../images/Category/advent.png" alt="cards__list-pic" width="380" height="385">
                 <a class="cards__list-link" href="#">LEARN MORE</a>                
                 <p class="cards__list-text" tabindex="0">CHRISTMAS ADVENT SCENTED CANDLE</p>
                 <h2 class="cards__list-subtitle" tabindex="0">$29.00 USD</h2>
             </li>
             <li class="cards__list-item cards__list-desc" tabindex="0">                
-                <img class="cards__list-img" src="../images/Category/tea.png" alt="cards__list-pic">
+                <img class="cards__list-img" src="../images/Category/tea.png" alt="cards__list-pic" width="380" height="385">
                 <a class="cards__list-link" href="#">LEARN MORE</a>               
                 <p class="cards__list-text" tabindex="0">TANGLE SPINNING TEA LIGHT</p>
                 <h2 class="cards__list-subtitle" tabindex="0">$56.00 USD</h2>
@@ -223,22 +226,22 @@
                     <ul class="footer__section-logo">
                         <li class="footer__section-icon">
                             <a class="footer__section-link" href="#">
-                                <img class="footer__section-img" src="../images/footer/facebook.svg" alt="Logotype Facebook">
+                                <img class="footer__section-img" src="../images/footer/facebook.svg" alt="Logotype Facebook" width="30" height="30">
                             </a>
                         </li>
                         <li class="footer__section-icon">
                             <a class="footer__section-link" href="#">
-                                <img class="footer__section-img" src="../images/footer/twitter.svg" alt="Logotype Twitter">
+                                <img class="footer__section-img" src="../images/footer/twitter.svg" alt="Logotype Twitter" width="30" height="30">
                             </a>
                         </li>
                         <li class="footer__section-icon">
                             <a class="footer__section-link" href="#">
-                                <img class="footer__section-img" src="../images/footer/pinterest.svg" alt="Logotype Pinterest">
+                                <img class="footer__section-img" src="../images/footer/pinterest.svg" alt="Logotype Pinterest" width="30" height="30">
                             </a>
                         </li>
                         <li class="footer__section-icon">
                             <a class="footer__section-link" href="#">
-                                <img class="footer__section-img" src="../images/footer/instagram.svg" alt="Logotype Instagram">
+                                <img class="footer__section-img" src="../images/footer/instagram.svg" alt="Logotype Instagram" width="30" height="30">
                             </a>
                         </li>
                     </ul>
@@ -268,6 +271,6 @@
             <a class="footer__subtitle-signature footer__subtitle-direct" href="#"><p>Web Design — Direct Line Development</p></a>
         </section>
     </footer>
-    <script src="../range.js"></script>
+    <script src="../script/range.min.js"></script>
 </body>
 </html>

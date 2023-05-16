@@ -15,12 +15,7 @@ button:disabled {background-color:#C7C1C1;}
 p {font-family: 'Open Sans',sans-serif;}
 h2 {font-family:'Montserrat', sans-serif;}
 
- /* MAIN */
-.container {
-    display: flex;  
-    max-width: 1180px;
-    justify-content: center;
-}
+
 /* БАННЕР */
 .main {
     display: flex;
@@ -277,29 +272,30 @@ h2 {font-family:'Montserrat', sans-serif;}
 }
 
 
-.page__list {
+.page__text {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     max-width: 480px;
     padding: 0 120px;
+    margin-top: 16px;
 }
-.page__list-button {
+.page__text-tab {
     display: flex;
-    border: none;
-    background-color: transparent;
-    padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.page__list-title {
+.page__text-title {
     font-family:'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 38px;
     margin: 17px 0px 0 2px;
 }
 
-.page__list-credit,
-.page__list-guarantee,
-.page__list-delivery {
+.page__text-credit,
+.page__text-guarantee,
+.page__text-delivery {
     font-family: 'Crimson Text',sans-serif;
     font-style: italic;
     font-size: 25.7px;
@@ -309,7 +305,36 @@ h2 {font-family:'Montserrat', sans-serif;}
     font-weight: 400;
 }
 
-.page__list-delivery {
+
+.page__text-link,
+.page__text-aside {
+    font-family: 'open sans', sans-serif;
+    font-size: 16px;
+}
+.page__text-guarantee {
+    margin-top: -1px;
+    margin-left: -21px;
+}
+.page__text-button {
+    background-color: #fff;
+}
+.page__text-button:hover {
+    background-color: #fff;
+}
+.page__text-button:active {
+    background-color: #fff;
+}
+.page__text-delivery {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 25.5px;
+    background-color: #70BBDC33;
+    max-width: 85px;
+    font-weight: 700;
+    padding: 10px 265px 10px 60px;
+    margin: 8.5px 0 0 -60px;
+}
+.page__text-delivery:hover {
     font-weight: 700;
     font-style: italic;
     font-size: 25.5px;
@@ -319,32 +344,35 @@ h2 {font-family:'Montserrat', sans-serif;}
     padding: 10px 180px 10px 60px;
     margin: 8.5px 0 0 -60px;
 }
-.page__list-link,
-.page__list-text {
-    font-family: 'open sans', sans-serif;
-    font-size: 16px;
+.page__text-delivery:active {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 25.5px;
+    background-color: #70BBDC33;
+    max-width: 85px;
+    font-weight: 700;
+    padding: 10px 180px 10px 60px;
+    margin: 8.5px 0 0 -60px;
 }
-.page__list-guarantee {
-    margin-top: 8px;
-    margin-bottom: 2px;
-}
-.page__list-credit {
+.page__text-credit {
     font-size: 26px;
     margin-bottom: 22px;
     letter-spacing: 0.2px;
+    margin-top: -1px;
+    margin-left: -21px;
 }
-.page__list-text {
+.page__text-aside {
     font-size: 16px;
     line-height: 22px;
     min-width: 480px;
     margin-top: 8px;
     word-spacing: 0.15px;
 }
-.page__list-two {
+.page__text-two {
     margin-top: -1.5px;
     white-space: break-spaces;
 }
-.page__list-subtitle {
+.page__text-subtitle {
     font-family: 'Open Sans',sans-serif;
     font-size: 16px;
     display: inline;
@@ -352,8 +380,12 @@ h2 {font-family:'Montserrat', sans-serif;}
     color: #FFFFFF;
     padding: 9px 22.5px;
 }
-.page__list-item-link {
-    margin-top: 20.5px;
+.page__text-link {
+    margin-top: 5px;
+}
+.page__text-list {
+    margin-top: -12px;
+    margin-left: -40px;
 }
 
 /* Логотипы */

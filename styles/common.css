@@ -62,7 +62,6 @@ a {text-decoration: none;}
 /* отступы */
 .header__nav-list {
     margin: -0.8px 0 6px 24px;
-    font-size: 600;
 }
 .header__nav-item:not(:last-child) {
     margin-right: 22.7px;
