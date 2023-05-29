@@ -341,7 +341,7 @@ h2 {font-family:'Montserrat', sans-serif;}
     background-color: #70BBDC33;
     max-width: 85px;
     font-weight: 700;
-    padding: 10px 180px 10px 60px;
+    padding: 10px 265px 10px 60px;
     margin: 8.5px 0 0 -60px;
 }
 .page__text-delivery:active {
@@ -351,7 +351,7 @@ h2 {font-family:'Montserrat', sans-serif;}
     background-color: #70BBDC33;
     max-width: 85px;
     font-weight: 700;
-    padding: 10px 180px 10px 60px;
+    padding: 10px 265px 10px 60px;
     margin: 8.5px 0 0 -60px;
 }
 .page__text-credit {
@@ -379,6 +379,12 @@ h2 {font-family:'Montserrat', sans-serif;}
     background-color: #000000;
     color: #FFFFFF;
     padding: 9px 22.5px;
+}
+.page__text-subtitle:hover {
+    background: #C29974;
+}
+.page__text-subtitle:active {
+    background: #CFAF91;
 }
 .page__text-link {
     margin-top: 5px;
