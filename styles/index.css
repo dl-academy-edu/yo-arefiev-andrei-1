@@ -495,7 +495,7 @@ h2 {font-family:'Montserrat', sans-serif;}
 
 
 /* Модальное окно */
-.modalWindow {
+.modalWindow__background {
     position: fixed;
     top: 0;
     left: 0;

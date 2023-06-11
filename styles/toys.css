@@ -112,6 +112,15 @@ input[type=range]::-webkit-slider-runnable-track  {
 .div__form-wrapper:not(:last-child) {
     margin-bottom: 18.5px;
 }
+.div__form-label:hover {
+    text-decoration: underline;
+}
+.div__form-label:active {
+    text-decoration: underline;
+}
+.div__form-wrapper:disabled {
+    background-color: #908484;
+}
 .div__form-title {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -162,7 +171,15 @@ input[type=range]::-webkit-slider-runnable-track  {
     position: relative;
     padding: 14.5px 0 0 30px;
 }
-
+.div__form-caption:hover {
+    text-decoration: underline;
+}
+.div__form-caption:active {
+    text-decoration: underline;
+}
+.div__form-div:disabled {
+    background-color: #908484;
+}
 .div__form-caption::after, 
 .div__form-caption::before {
     content: "";
